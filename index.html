@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Disclaimer Generator</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script src="script.js"></script>
+<style>
+body {
+	text-align: left;
+	vertical-align: top;
+	margin: 20px auto;
+	
+}
+.form-style {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	margin: 0 auto;
+	font-size: 13px;
+	color: #5E5B54;
+	align-content: center;
+	padding: 0 10%;
+	display: block;
+	
+}
+button {
+	border: 1px solid #D31245;
+	border-radius: 30px;
+	padding: 10px 20px;
+	background: #D31245;
+	color: white;
+	width: 200px;
+	font-size: 12px;
+}
+.gray {
+	border: 1px solid #D31245;
+	border-radius: 30px;
+	padding: 10px 20px;
+	background: #FFFFFF;
+	color: #D31245;
+	width: 200px;
+	font-size: 12px;
+}
+.box {
+	background-color: #F8F8F8;
+	padding: 20px;
+	width: 70%;	
+}
+	
+.line{
+  
+  width: 70%;
+  border-top: 0.2px solid red;
+  margin-top: 10px;
+}
+	
+p {
+	display: block;
+}
+input[type='radio']:checked:after {
+	width: 13px;
+	height: 13px;
+	border-radius: 13px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: #D31245;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid white;
+}
+input[type='radio']:after {
+	width: 13px;
+	height: 13px;
+	border-radius: 13px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: #FFFFFF;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 1px solid #d1d3d1;
+}
+.none {
+	display: none;
+}
+/* Add this CSS to your existing styles */
+.checkmark-button {
+	border: 1px solid #D31245;
+	border-radius: 30px;
+	padding: 10px 30px;
+	margin: 20px;
+	cursor: pointer;
+	font-size: 12px;
+	margin: 5px;
+}
+.checkmark-button:hover {
+	background-color: #D31245;
+	color: #FFFFFF;
+}
+.checkmark-button.active {
+	background-color: #D31245;
+	color: #FFFFFF;
+}
+</style>
+</head>
+<body>
+<div class="form-style">
+  <h1>List Email Disclaimer Boilerplate Generator</h1>
+  <div class="box">
+    <label for="location"> <strong> Select Division:</strong> </label>
+    <select id="location" required>
+      <option value="">Select Division</option>
+      <option value="bay">Bay</option>
+      <option value="s-california">Southern California</option>
+      <option value="sacramento">Sacramento</option>
+      <option >---------------</option>
+      <option value="austin">Austin</option>
+      <option value="dallas">Dallas</option>
+      <option value="houston">Houston</option>
+      <option >---------------</option>
+      <option value="jacksonville">Jacksonville</option>
+      <option value="naples">Fort Myers Naples</option>
+      <option value="orlando">Orlando</option>
+      <option value="sarasota">Sarasota</option>
+      <option value="tampa">Tampa</option>
+      <option value="treasure">Treasure Coast</option>
+      <option >---------------</option>
+      <option value="denver">Denver</option>
+      <option value="lasvegas">Las Vegas</option>
+      <option value="phoenix">Phoenix</option>
+      <option >---------------</option>
+      <option value="portland">Portland</option>
+      <option value="seattle">Seattle</option>
+      <option >---------------</option>
+      <option value="atlanta">Atlanta</option>
+      <option value="charlotte">Charlotte</option>
+      <option value="raleigh">Raleigh</option>
+      <option >---------------</option>
+    </select>
+  </div>
+  
+  <!-- Add these buttons in your existing HTML -->
+  <div> <br>
+    <br>
+    <span class="checkmark-button yes" onclick="selectAllYes()">Select All Yes (Reset Form)</span> <span class="checkmark-button no" onclick="selectAllNo()">Select All No</span> <br>
+    <br>
+  </div>
+	
+  <div class="question" >
+  <p >Include default disclaimer?  </p>
+    <input type="radio" name="disclaimer" value="yes" checked>
+    Yes <br>
+
+  </div> 
+
+  <div class="question" id="question1">
+    <p>Include "America's Most Trusted&reg;?"</p>
+    <input type="radio" name="trusted" value="yes" checked>
+    Yes
+    <input type="radio" name="trusted" value="no">
+    No <br>
+	   </div> 
+
+	
+	<div class="line" id="divider">&nbsp;</div>
+
+ 
+	<div class="question" id="question2">
+    <p>Is stock image with people used in the email?</p>
+    <input type="radio" name="photos" value="yes" checked>
+    Yes
+    <input type="radio" name="photos" value="no">
+    No <br>
+  </div>
+  <div class="question" id="question3">
+    <p>Product photos used in the email?</p>
+    <input type="radio" name="product-photos" value="yes" checked>
+    Yes
+    <input type="radio" name="product-photos" value="no">
+    No <br>
+  </div>
+  <div class="question" id="question4">
+    <p>Is elevation(rendering) used in the email?</p>
+    <input type="radio" name="rendering" value="yes" checked>
+    Yes
+    <input type="radio" name="rendering" value="no">
+    No <br>
+  </div>
+  <div class="question" id="question5">
+    <p>The content include floor plan?</p>
+    <input type="radio" name="fplan" value="yes" checked>
+    Yes
+    <input type="radio" name="fplan" value="no">
+    No <br>
+  </div>
+	
+	
+  <div class="question" id="question6">
+    <p>The content include virtual tour?</p>
+    <input type="radio" name="virtual" value="yes" checked>
+    Yes
+    <input type="radio" name="virtual" value="no">
+    No <br>
+  </div>
+	
+	
+	<div class="line" id="divider">&nbsp;</div>
+	
+	
+	
+  <div class="question" id="question7">
+    <p>The content include pricing?</p>
+    <input type="radio" name="pricing" value="yes" checked>
+    Yes
+    <input type="radio" name="pricing" value="no">
+    No <br>
+  </div>
+  <div class="question" id="question8">
+    <p>The content include QMI?</p>
+    <input type="radio" name="qmi" value="yes" checked>
+    Yes
+    <input type="radio" name="qmi" value="no">
+    No <br>
+  </div>
+	
+	
+	  <div class="question" id="question9">
+    <p>The content include sitemap?</p>
+    <input type="radio" name="sitemap" value="yes" checked>
+    Yes
+    <input type="radio" name="sitemap" value="no">
+    No <br>
+    
+  </div>
+	
+ <div class="question" id="question10">
+    <p>The content include location (job, attractions, school and local event)?</p>
+    <input type="radio" name="locationlocation" value="yes" checked>
+    Yes
+    <input type="radio" name="locationlocation" value="no">
+    No <br>
+   
+  </div>
+	
+	
+	
+	<div class="line" id="divider">&nbsp;</div>
+	
+	
+  <div class="question" id="question15">
+    <p>Is this 55+ active adult community?</p>
+    <input type="radio" name="senior" value="yes" checked>
+    Yes
+    <input type="radio" name="senior" value="no">
+    No <br>
+    <br>
+  </div>
+	
+	
+	
+	
+	<br>
+  <button onclick="generateSentence()">Generate Disclaimer</button>
+	
+  <button class="gray" id="copyToClipboardButton" onclick="copyToClipboard()">Copy to Clipboard</button>
+  <br>
+  <br>
+  <textarea id="result" rows="30" cols="80" readonly></textarea>
+  <br>
+  <textarea id="clipboard" style="position: absolute; left: -9999px;"></textarea>
+</div>
+</body>
+</html>
