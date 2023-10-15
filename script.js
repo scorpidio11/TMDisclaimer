@@ -114,7 +114,7 @@ function generateSentence() {
 
   if (quickMovein === "yes") {
     sentence += "\n\n";
-    sentence += "Quick Move-In Home prices exclude furniture, decorative accessories, as well as closing costs and will include any lot premium, Seller installed options and upgrades; Buyer-selected options will not be available on quick move-in homes.";
+    sentence += "Quick Move-In Home prices exclude furniture, decorative accessories, as well as closing costs and will include any lot premium, Seller installed options and upgrades; Buyer-selected options will not be available on quick move-in homes. Quick Move-In Homes will be subject to prior sale.";
   }
 
 	if (siteMap === "yes") {
