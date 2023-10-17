@@ -14,7 +14,9 @@ function generateSentence() {
   var locationLocation = document.querySelector('input[name="locationlocation"]:checked').value;
 
   var fiftyfiveCommunity = document.querySelector('input[name="senior"]:checked').value;
-
+  var tmhfOption = document.querySelector('input[name="tmhf"]:checked').value;
+  var tmAmenity = document.querySelector('input[name="amenity"]:checked').value;
+	
   var location = document.getElementById("location").value;
 
   // Calculate the current date
@@ -63,21 +65,40 @@ function generateSentence() {
  if (siteMap === "no") {
     document.getElementById('question9').style.display = 'none';
   }
+	
+	if (locationLocation === "no") {
+    document.getElementById('question10').style.display = 'none';
+  }
+	
+  if (tmAmenity === "no") {
+    document.getElementById('question11').style.display = 'none';
+  }
+	
 
-
 	
-	
-	
-	
-	
-
   if (fiftyfiveCommunity === "no") {
     document.getElementById('question15').style.display = 'none';
   }
 
 
+if (tmhfOption === "no") {
+    document.getElementById('question16').style.display = 'none';
+  }
+	
+
+
+	
+//	disclaimer content - All Answers
+	
+  if (disclaimerOption === "yes") {
+    
+    sentence += "All information (including, but not limited to prices, views, availability, school assignments and ratings, incentives, floor plans, site plans, features, standards and options, assessments, and fees, planned amenities, programs, conceptual artists' renderings, tax rates and community development plans) is not guaranteed and remains subject to change, or delay without notice. This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable).";
+  }
+		
+
   if (trustedOption === "yes") {
-    sentence += "Taylor Morrison received the highest numerical score in the proprietary Lifestory Research 2016, 2017, 2018, 2019, 2020, 2021, 2022, and 2023 America\u2019s Most Trusted\u00AE Home Builder study. Study results are based on experiences and perceptions of people surveyed. Your experiences may vary. Visit www.lifestoryresearch.com.";
+	sentence += "\n\n"; 
+    sentence += "*Taylor Morrison received the highest numerical score in the proprietary Lifestory Research 2016, 2017, 2018, 2019, 2020, 2021, 2022, and 2023 America\u2019s Most Trusted\u00AE Home Builder study. Study results are based on experiences and perceptions of people surveyed. Your experiences may vary. Visit www.lifestoryresearch.com.";
   }
 
 
@@ -124,12 +145,16 @@ function generateSentence() {
 	
   if (locationLocation === "yes") {
     sentence += "\n\n";
-    sentence += "Any reference to amenities, attractions, local events and services outside of the Community are provided for general informational purposes only without guarantee and represents a non-exhaustive summary of existing and/or planned neighborhood merchants, facilities and services that remain subject to change outside of Taylor Morrison’s control. All homes subject to prior sales. Complete details available.";
+    sentence += "Any reference to amenities, attractions, local events and services outside of the Community are provided for general informational purposes only without guarantee and represents a non-exhaustive summary of existing and/or planned neighborhood merchants, facilities and services that remain subject to change outside of Taylor Morrison’s control. All homes subject to prior sales. ";
   }
 	
 	
 
-
+  if (tmAmenity === "yes") {
+    sentence += "\n\n";
+    sentence += "Any community improvements, recreational features and amenities described are based upon current development plans, which are subject to change and under no obligation to be completed. Any reference to amenities, attractions and services outside of the Community are provided for general informational purposes only without guarantee and represents a non-exhaustive summary of existing and/or planned neighborhood merchants, facilities and services that remain subject to change. ";
+  }
+	
 
 
   if (fiftyfiveCommunity === "yes") {
@@ -137,10 +162,90 @@ function generateSentence() {
     sentence += "At least one resident of household must be 55 or older, and additional restrictions apply. Some residents may be younger than 55 and no one under 19 in permanent residency.";
   }
 
-  if (disclaimerOption === "yes") {
-    sentence += "\n\n";
-    sentence += "All information (including, but not limited to prices, views, availability, school assignments and ratings, incentives, floor plans, site plans, features, standards and options, assessments, and fees, planned amenities, programs, conceptual artists' renderings, tax rates and community development plans) is not guaranteed and remains subject to change, or delay without notice. This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable).";
-  }
+
+	
+		
+// TMHF if tmhf is "yes"
+    if (location === "s-california" && tmhfOption === "yes") {
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location: CA: DFPI #4130023| www.nmlsconsumeraccess.org.";
+    }
+	else if (location === "bay" && tmhfOption === "yes") {
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location: CA: DFPI #4130023| www.nmlsconsumeraccess.org.";
+    }
+	else if (location === "sacramento" && tmhfOption === "yes") {
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location: CA: DFPI #4130023| www.nmlsconsumeraccess.org.";
+    }
+	
+	
+	else if (location === "austin" && tmhfOption === "yes") {
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location: TX: #8588| www.nmlsconsumeraccess.org.";
+    }
+	
+   else if (location === "dallas" && tmhfOption === "yes") {
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location: TX: #8588| www.nmlsconsumeraccess.org.";
+    }
+	
+	
+	else if (location === "houston" && tmhfOption === "yes") {
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location: TX: #8588| www.nmlsconsumeraccess.org.";
+    }
+	
+		else if (location === "jacksonville" && tmhfOption === "yes") {
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed locations: FL: MLD1920 | GA: #52654 | www.nmlsconsumeraccess.org.";
+    }
+	
+		else if (location === "naples" && tmhfOption === "yes") {
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location FL: MLD1920 | www.nmlsconsumeraccess.org.";
+    }
+	
+		else if (location === "orlando" && tmhfOption === "yes") {
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location FL: MLD1920 | www.nmlsconsumeraccess.org.";
+    }
+	
+		else if (location === "sarasota" && tmhfOption === "yes") {
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location FL: MLD1920 | www.nmlsconsumeraccess.org.";
+    }
+	
+		else if (location === "tampa" && tmhfOption === "yes") {
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location FL: MLD1920 | www.nmlsconsumeraccess.org.";
+    }
+	
+		else if (location === "treasure" && tmhfOption === "yes") {
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location FL: MLD1920 | www.nmlsconsumeraccess.org.";
+    }
+	
+		else if (location === "denver" && tmhfOption === "yes") {
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed locations: CO: Registration #8588, PH# 866-379-5390 | www.nmlsconsumeraccess.org.";
+    }
+		else if (location === "lasvegas" && tmhfOption === "yes") {
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location: NV: #3938 (branch located at 1820 Festival Plaza Dr, Ste. 220A, Las Vegas, NV 89135 PH# 702-680-1085) (“Affiliated Lender”). | www.nmlsconsumeraccess.org.";
+    }
+	
+	else if (location === "phoenix" && tmhfOption === "yes") {
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location: AZ: #0917436 | www.nmlsconsumeraccess.org.";
+    }
+	
+	else if (location === "portland" && tmhfOption === "yes") {
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location: OR: #ML-4272 | www.nmlsconsumeraccess.org.";
+    }
+	
+	else if (location === "seattle" && tmhfOption === "yes") {
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed locations: WA: #CL-8588 |www.nmlsconsumeraccess.org.";
+    }
+	
+	else if (location === "atlanta" && tmhfOption === "yes") {
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc. NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751. Licensed location: GA: #52654 | www.nmlsconsumeraccess.org.";
+    }
+	
+	else if (location === "charlotte" && tmhfOption === "yes") {
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc. NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751. Licensed locations: NC: #L-191654 | SC: #MLS-8588 | www.nmlsconsumeraccess.org.";
+    }
+	
+	else if (location === "raleigh" && tmhfOption === "yes") {
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed locations: OR: #ML-4272 | www.nmlsconsumeraccess.org.";
+    }
+	
+// Entity Info"	
 
   if (location === "s-california") {
     sentence += "\n\n";
@@ -211,6 +316,8 @@ function generateSentence() {
   //}
 
 
+
+	
   document.getElementById("result").value = sentence;
 
   // Remove the divider element

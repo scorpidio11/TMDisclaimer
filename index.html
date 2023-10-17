@@ -102,6 +102,8 @@ input[type='radio']:after {
 	background-color: #D31245;
 	color: #FFFFFF;
 }
+
+
 </style>
 </head>
 <body>
@@ -243,7 +245,15 @@ input[type='radio']:after {
    
   </div>
 	
-	
+ <div class="question" id="question11">
+    <p>The content include Amenity??</p>
+    <input type="radio" name="amenity" value="yes" checked>
+    Yes
+    <input type="radio" name="amenity" value="no">
+    No <br>
+   
+  </div>
+		
 	
 	<div class="line" id="divider">&nbsp;</div>
 	
@@ -257,9 +267,16 @@ input[type='radio']:after {
     <br>
   </div>
 	
+		<div class="line" id="divider">&nbsp;</div>
 	
-	
-	
+	  <div class="question" id="question16">
+    <p>The content include TMHF(Taylormo Morrison Home Funding)?</p>
+    <input type="radio" name="tmhf" value="yes" checked>
+    Yes
+    <input type="radio" name="tmhf" value="no">
+    No <br>
+    <br>
+  </div>
 	<br>
   <button onclick="generateSentence()">Generate Disclaimer</button>
 	
