@@ -13,7 +13,7 @@ function generateSentence() {
   var siteMap = document.querySelector('input[name="sitemap"]:checked').value;
   var locationLocation = document.querySelector('input[name="locationlocation"]:checked').value;
 
-  var fiftyfiveCommunity = document.querySelector('input[name="senior"]:checked').value;
+//  var fiftyfiveCommunity = document.querySelector('input[name="senior"]:checked').value;
   var tmhfOption = document.querySelector('input[name="tmhf"]:checked').value;
   var tmAmenity = document.querySelector('input[name="amenity"]:checked').value;
 	
@@ -76,9 +76,9 @@ function generateSentence() {
 	
 
 	
-  if (fiftyfiveCommunity === "no") {
-    document.getElementById('question15').style.display = 'none';
-  }
+//  if (fiftyfiveCommunity === "no") {
+//    document.getElementById('question15').style.display = 'none';
+//  }
 
 
 if (tmhfOption === "no") {
@@ -157,10 +157,10 @@ if (tmhfOption === "no") {
 	
 
 
-  if (fiftyfiveCommunity === "yes") {
-    sentence += "\n\n";
-    sentence += "At least one resident of household must be 55 or older, and additional restrictions apply. Some residents may be younger than 55 and no one under 19 in permanent residency.";
-  }
+//  if (fiftyfiveCommunity === "yes") {
+//    sentence += "\n\n";
+//    sentence += "At least one resident of household must be 55 or older, and additional restrictions apply. Some residents may be younger than 55 and no one under 19 in permanent residency.";
+//  }
 
 
 	
@@ -390,3 +390,6 @@ function selectAllNo() {
   document.querySelector('.checkmark-button.no').classList.add('active');
   document.querySelector('.checkmark-button.yes').classList.remove('active');
 }
+
+
+
