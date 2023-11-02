@@ -2,13 +2,16 @@ function generateSentence() {
 
 
   var trustedOption = document.querySelector('input[name="trusted"]:checked').value;
+  var calAD = document.querySelector('input[name="calad"]:checked').value;
   var disclaimerOption = document.querySelector('input[name="disclaimer"]:checked').value;
   var StockPhotosOption = document.querySelector('input[name="photos"]:checked').value;
   var prdocutPhotosOption = document.querySelector('input[name="product-photos"]:checked').value;
   var renderingOption = document.querySelector('input[name="rendering"]:checked').value;
   var floorPlan = document.querySelector('input[name="fplan"]:checked').value;
   var virtualTour = document.querySelector('input[name="virtual"]:checked').value;
-  var pricingInfo = document.querySelector('input[name="pricing"]:checked').value;
+  var neighborMap = document.querySelector('input[name="neighborhoodmap"]:checked').value;
+  var qmipricingInfo = document.querySelector('input[name="pricing"]:checked').value;
+  var tbbpricingInfo = document.querySelector('input[name="tbbpricing"]:checked').value;
   var quickMovein = document.querySelector('input[name="qmi"]:checked').value;
   var siteMap = document.querySelector('input[name="sitemap"]:checked').value;
   var locationLocation = document.querySelector('input[name="locationlocation"]:checked').value;
@@ -16,7 +19,7 @@ function generateSentence() {
 //  var fiftyfiveCommunity = document.querySelector('input[name="senior"]:checked').value;
   var tmhfOption = document.querySelector('input[name="tmhf"]:checked').value;
   var tmAmenity = document.querySelector('input[name="amenity"]:checked').value;
-	
+  var tmFinal = document.querySelector('input[name="final"]:checked').value;
   var location = document.getElementById("location").value;
 
   // Calculate the current date
@@ -54,10 +57,18 @@ function generateSentence() {
     document.getElementById('question6').style.display = 'none';
   }
 
-  if (pricingInfo === "no") {
+ if (neighborMap === "no") {
+    document.getElementById('question14').style.display = 'none';
+  }
+	
+  if (qmipricingInfo === "no") {
     document.getElementById('question7').style.display = 'none';
   }
 
+  if (tbbpricingInfo=== "no") {
+    document.getElementById('question13').style.display = 'none';
+  }
+	
   if (quickMovein === "no") {
     document.getElementById('question8').style.display = 'none';
   }
@@ -74,7 +85,10 @@ function generateSentence() {
     document.getElementById('question11').style.display = 'none';
   }
 	
-
+ if (tmFinal === "no") {
+    document.getElementById('question12').style.display = 'none';
+  }
+	
 	
 //  if (fiftyfiveCommunity === "no") {
 //    document.getElementById('question15').style.display = 'none';
@@ -85,23 +99,29 @@ if (tmhfOption === "no") {
     document.getElementById('question16').style.display = 'none';
   }
 	
-
+if (calAD === "no") {
+    document.getElementById('question17').style.display = 'none';
+  }
+	
 
 	
 //	disclaimer content - All Answers
 	
-  if (disclaimerOption === "yes") {
-    
-    sentence += "All information (including, but not limited to prices, views, availability, school assignments and ratings, incentives, floor plans, site plans, features, standards and options, assessments, and fees, planned amenities, programs, conceptual artists' renderings, tax rates and community development plans) is not guaranteed and remains subject to change, or delay without notice. This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable).";
+   if (calAD === "yes") {
+
+    sentence += "WARNING: THE CALIFORNIA DEPARTMENT OF REAL ESTATE HAS NOT INSPECTED, EXAMINED, OR QUALIFIED THIS OFFERING.";
   }
 		
 
   if (trustedOption === "yes") {
-	sentence += "\n\n"; 
+    sentence += "\n\n"; 
     sentence += "*Taylor Morrison received the highest numerical score in the proprietary Lifestory Research 2016, 2017, 2018, 2019, 2020, 2021, 2022, and 2023 America\u2019s Most Trusted\u00AE Home Builder study. Study results are based on experiences and perceptions of people surveyed. Your experiences may vary. Visit www.lifestoryresearch.com.";
   }
 
-
+if (disclaimerOption === "yes") {
+    sentence += "\n\n";
+    sentence += "All information (including, but not limited to prices, views, availability, school assignments and ratings, incentives, floor plans, site plans, features, standards and options, assessments, and fees, planned amenities, programs, conceptual artists' renderings, tax rates and community development plans) is not guaranteed and remains subject to change, or delay without notice. This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable).";
+  }
   if (StockPhotosOption === "yes") {
     sentence += "\n\n";
     sentence += "Images do not reflect a racial, ethnic, age or familial status preference.";
@@ -128,16 +148,28 @@ if (tmhfOption === "no") {
     sentence += "Virtual Tours of any homes are deemed reliable but not guaranteed as of the date indicated and are representative of the specific lots and plans at this community. As-Built plans control. There is no substitution for a personal tour to fully appreciate each home's unique characteristics, as well as the adjacent and surrounding features, current views and amenities.";
   }
 
-  if (pricingInfo === "yes") {
+   if (neighborMap === "yes") {
     sentence += "\n\n";
-    sentence += "Prices may not include lot premiums, upgrades and options depending on stage of construction.";
+    sentence += "Neighborhood Map is intended for informational purposes only without guarantee and represents an artist’s conceptual depiction of the existing and/or planned neighborhood merchants, facilities and services that remain subject to change. Contact each venue directly for details. Status of lot availability in this sitemap remains subject to change and is not guaranteed.";
   }
-
+	
   if (quickMovein === "yes") {
     sentence += "\n\n";
     sentence += "Quick Move-In Home prices exclude furniture, decorative accessories, as well as closing costs and will include any lot premium, Seller installed options and upgrades; Buyer-selected options will not be available on quick move-in homes. Quick Move-In Homes will be subject to prior sale.";
   }
 
+  if (qmipricingInfo === "yes") {
+    sentence += "\n\n";
+    sentence += "Featured Home current price shown above excludes closing costs and already includes any lot premium, Seller installed options and upgrades; Buyer-selected options are no longer available. Featured Home subject to prior sale. Community Association or other fees may be required.";
+  }
+
+
+	if (tbbpricingInfo === "yes") {
+    sentence += "\n\n";
+    sentence += "Price(s) shown may not reflect lot premiums, upgrades and options depending on stage of construction. All homes are subject to prior sale.";
+  }
+
+	
 	if (siteMap === "yes") {
     sentence += "\n\n";
     sentence += "Maps and plans are not to scale, all dimensions are approximate and may vary in actual construction. Community improvements, recreational features and amenities described are based upon current development plans which are subject to change and under no obligation to be completed. Once released, all lots shown on Site Map subject to prior sale.";
@@ -156,6 +188,10 @@ if (tmhfOption === "no") {
   }
 	
 
+	if (tmFinal === "yes") {
+    sentence += "\n\n";
+    sentence += "Any reference to the Community’s current pending “closeout/final phase” status is defined to include homes that have either closed or are still under contract and such information on homes not yet closed remains subject to change daily.";
+  }
 
 //  if (fiftyfiveCommunity === "yes") {
 //    sentence += "\n\n";
