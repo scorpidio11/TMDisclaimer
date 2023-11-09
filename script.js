@@ -288,10 +288,10 @@ if (disclaimerOption === "yes") {
     sentence += copyrightYear + "Taylor Morrison of California, LLC, William Lyon Homes, Inc. and RSI Communities-California, LLC. All rights reserved.";
   } else if (location === "sacramento") {
     sentence += "\n\n";
-    sentence += copyrightYear + "Taylor Morrison of California, LLC. All rights reserved. All rights reserved.";
+    sentence += copyrightYear + "Taylor Morrison of California, LLC. All rights reserved.";
   } else if (location === "bay") {
     sentence += "\n\n";
-    sentence += copyrightYear + "Taylor Morrison of California, LLC and William Lyon Homes, Inc. All rights reserved. All rights reserved.";
+    sentence += copyrightYear + "Taylor Morrison of California, LLC and William Lyon Homes, Inc. All rights reserved.";
   } else if (location === "jacksonville") {
     sentence += "\n\n";
     sentence += copyrightYear + "Taylor Morrison of Georgia, LLC, AVH North Florida, LLC, Taylor Morrison of Florida, Inc. CBC1265083. All rights reserved.";
