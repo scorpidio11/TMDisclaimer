@@ -193,6 +193,10 @@ if (disclaimerOption === "yes") {
     sentence += "Any reference to the Community’s current pending “closeout/final phase” status is defined to include homes that have either closed or are still under contract and such information on homes not yet closed remains subject to change daily.";
   }
 
+
+	
+	
+	
 //  if (fiftyfiveCommunity === "yes") {
 //    sentence += "\n\n";
 //    sentence += "At least one resident of household must be 55 or older, and additional restrictions apply. Some residents may be younger than 55 and no one under 19 in permanent residency.";
@@ -281,6 +285,10 @@ if (disclaimerOption === "yes") {
         sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed locations: OR: #ML-4272 | www.nmlsconsumeraccess.org.";
     }
 	
+	
+		
+
+	
 // Entity Info"	
 
   if (location === "s-california") {
@@ -344,7 +352,11 @@ if (disclaimerOption === "yes") {
     sentence += "\n\n";
     sentence += copyrightYear + "Taylor Morrison of Texas, Inc. and Darling Homes of Texas, LLC, each the “Selling Entity” as applicable to client’s transaction. All rights reserved.";
   }
-
+		else if (location === "corp") {
+    sentence += "\n\n";
+    sentence += copyrightYear + "TTaylor Morrison, Inc. All rights reserved.";
+  }
+	
 
   //else if (location === "dallas" || location === "houston" || location === "austin") {
   //    sentence += "\n\n";
