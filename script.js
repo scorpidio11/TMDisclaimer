@@ -285,6 +285,9 @@ if (disclaimerOption === "yes") {
         sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed locations: OR: #ML-4272 | www.nmlsconsumeraccess.org.";
     }
 	
+	else if (location === "corp" && tmhfOption === "yes") {
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc. (“Affiliated Lender”), NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location: AZ: #0917436 | CA: DFPI #4130023 | CO: Registration #8588, PH# (866) 379-5390 | FL: MLD1920 | GA: #52654 | NV: #3938 (branch located at 1820 Festival Plaza Dr., Ste. 220A, Las Vegas, NV 89135 PH# (702) 680-1085)| NC: #L-191654 | OR: #ML-4272 | SC: #MLS-8588 | TX: #8588 | WA: #CL-8588 | www.nmlsconsumeraccess.org.";
+    }
 	
 		
 
@@ -311,13 +314,13 @@ if (disclaimerOption === "yes") {
     sentence += copyrightYear + "Taylor Morrison of Florida, Inc. CBC1257462, Avatar Properties Inc. CBC1254089. All rights reserved.";
   } else if (location === "sarasota") {
     sentence += "\n\n";
-    sentence += copyrightYear + "Taylor Morrison of Florida, Inc. CBC1257822, CBC1259457, CGC1529148. All rights reserved.";
+    sentence += copyrightYear + "Taylor Morrison of Florida, Inc. CBC1259457, CGC1529148. All rights reserved.";
   } else if (location === "tampa") {
     sentence += "\n\n";
-    sentence += copyrightYear + "Taylor Morrison of Florida, Inc. CRC1328617, Taylor Woodrow Communities at Artisan Lakes, L.L.C. CBC1259073, CGC1519714. All rights reserved.";
+    sentence += copyrightYear + "Taylor Morrison of Florida, Inc. CRC1328617, Taylor Woodrow Communities at Artisan Lakes, L.L.C. CGC1519714. All rights reserved.";
   } else if (location === "treasure") {
     sentence += "\n\n";
-    sentence += copyrightYear + "Taylor Morrison of Florida, Inc. CBC1257822, CBC1259457. All rights reserved.";
+    sentence += copyrightYear + "Taylor Morrison of Florida, Inc. CBC1259457. All rights reserved.";
   } else if (location === "denver") {
     sentence += "\n\n";
     sentence += copyrightYear + "Taylor Morrison of Colorado, Inc. and William Lyon Homes, Inc., each the “Selling Entity” as applicable to client’s transaction. All rights reserved.";
