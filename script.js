@@ -332,7 +332,7 @@ if (disclaimerOption === "yes") {
     sentence += copyrightYear + "TM Homes of Arizona, Inc., AZ DRE # CO535669000; AV Homes of Arizona, LLC, AZ DRE # LC632206000; William Lyon Southwest, Inc., AZ DRE # CO521011000. All rights reserved.";
   } else if (location === "portland") {
     sentence += "\n\n";
-    sentence += copyrightYear + "Cascadian South L.L.C., Oregon Real Estate License No. 950300179; Taylor Morrison Northwest, LLC, Oregon CCB License No. 204238 and South Cooper Mountain Owner, LLC, Oregon CCB License No. 222618. All rights reserved.";
+    sentence += copyrightYear + "Cascadian South L.L.C., Oregon Real Estate License No. 950300179; Taylor Morrison Northwest, LLC, Oregon CCB License No. 204238; South Cooper Mountain Owner, LLC, Oregon CCB License No. 222618; Cascadian King Company LLC, Washington Real Estate License No. 8193; Taylor Morrison Northwest, LLC, Washington License No. TAYLOMN791L8. All rights reserved.";
   } else if (location === "seattle") {
     sentence += "\n\n";
     sentence += copyrightYear + "Taylor Morrison Northwest, LLC WA Contractor License #TAYLOMN791L8. Broker license: Cascadian King Company LLC #8193. All rights reserved.";
