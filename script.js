@@ -115,7 +115,7 @@ if (calAD === "no") {
 
   if (trustedOption === "yes") {
     sentence += "\n\n"; 
-    sentence += "*Taylor Morrison received the highest numerical score in the proprietary Lifestory Research 2016, 2017, 2018, 2019, 2020, 2021, 2022, and 2023 America\u2019s Most Trusted\u00AE Home Builder study. Study results are based on experiences and perceptions of people surveyed. Your experiences may vary. Visit www.lifestoryresearch.com.";
+    sentence += "†Taylor Morrison received the highest numerical score in the proprietary Lifestory Research 2016, 2017, 2018, 2019, 2020, 2021, 2022, and 2023 America\u2019s Most Trusted\u00AE Home Builder study. Study results are based on experiences and perceptions of people surveyed. Your experiences may vary. Visit www.lifestoryresearch.com.";
   }
 
 if (disclaimerOption === "yes") {
