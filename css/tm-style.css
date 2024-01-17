@@ -1,0 +1,111 @@
+
+body {
+	text-align: left;
+	vertical-align: top;
+	margin: 20px auto;
+	
+}
+.form-style {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	margin: 0 auto;
+	margin-left: 1%;
+	margin-Top: 2%;
+	font-size: 13px;
+	color: #5E5B54;
+	align-content: center;
+	padding: 0 10%;
+	display: block;
+	
+}
+button {
+	border: 1px solid #D31245;
+	border-radius: 30px;
+	padding: 10px 20px;
+	background: #D31245;
+	color: white;
+	width: 200px;
+	font-size: 12px;
+	margin-bottom: 15px;
+}
+
+
+
+.gray {
+	border: 1px solid #D31245;
+	border-radius: 30px;
+	padding: 10px 20px;
+	background: #FFFFFF;
+	color: #D31245;
+	width: 200px;
+	font-size: 12px;
+}
+.box {
+	background-color: #F8F8F8;
+	padding: 20px;
+	width: 100%;	
+}
+	
+.line{
+  
+  width: 70%;
+  border-top: 0.2px solid red;
+  margin-top: 10px;
+}
+	
+p {
+	display: block;
+}
+input[type='radio']:checked:after {
+	width: 13px;
+	height: 13px;
+	border-radius: 13px;
+/*
+	top: -2px;
+	left: -1px;
+*/
+	position: relative;
+	background-color: #D31245;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 1px solid #D31245;
+}
+/*
+input[type='radio']:after {
+	width: 13px;
+	height: 13px;
+	border-radius: 13px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: #FFFFFF;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 1px solid #d1d3d1;
+}
+*/
+.none {
+	display: none;
+}
+/* Add this CSS to your existing styles */
+.checkmark-button {
+	border: 1px solid #D31245;
+	border-radius: 30px;
+	padding: 10px 30px;
+	background: #FFFFFF;
+	Color: #D31245;
+	cursor: pointer;
+	font-size: 12px;
+	margin-bottom: 15px;
+	width: 250px;
+	text-align: center;
+}
+.checkmark-button:hover {
+	background-color: #D31245;
+	color: #FFFFFF;
+}
+.checkmark-button.active {
+	background-color: #D31245;
+	color: #FFFFFF;
+}
