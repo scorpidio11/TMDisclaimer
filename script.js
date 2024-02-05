@@ -357,7 +357,7 @@ if (disclaimerOption === "yes") {
   }
 		else if (location === "corp") {
     sentence += "\n\n";
-    sentence += copyrightYear + "TTaylor Morrison, Inc. All rights reserved.";
+    sentence += copyrightYear + "Taylor Morrison, Inc. All rights reserved.";
   }
 	
 
