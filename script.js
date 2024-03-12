@@ -305,22 +305,22 @@ if (disclaimerOption === "yes") {
     sentence += copyrightYear + "Taylor Morrison of California, LLC and William Lyon Homes, Inc. All rights reserved.";
   } else if (location === "jacksonville") {
     sentence += "\n\n";
-    sentence += copyrightYear + "Taylor Morrison of Georgia, LLC, AVH North Florida, LLC, Taylor Morrison of Florida, Inc. CBC1265083. All rights reserved.";
+    sentence += copyrightYear + "Taylor Morrison of Florida, Inc. CBC1265083 Avatar Properties Inc. CBC1254089. All rights reserved.";
   } else if (location === "naples") {
     sentence += "\n\n";
     sentence += copyrightYear + "Taylor Morrison of Florida, Inc. CBC1263209. All rights reserved.";
   } else if (location === "orlando") {
     sentence += "\n\n";
-    sentence += copyrightYear + "Taylor Morrison of Florida, Inc. CBC1257462, Avatar Properties Inc. CBC1254089. All rights reserved.";
+    sentence += copyrightYear + "Taylor Morrison of Florida, Inc. CBC1257462, Avatar Properties Inc. CBC1254089. CBC1254089. All rights reserved.";
   } else if (location === "sarasota") {
     sentence += "\n\n";
     sentence += copyrightYear + "Taylor Morrison of Florida, Inc. CBC1259457, CGC1529148. All rights reserved.";
   } else if (location === "tampa") {
     sentence += "\n\n";
-    sentence += copyrightYear + "Taylor Morrison of Florida, Inc. CRC1328617, Taylor Woodrow Communities at Artisan Lakes, L.L.C. CGC1519714. All rights reserved.";
+    sentence += copyrightYear + "Taylor Morrison of Florida, Inc. CRC1328617, Taylor Woodrow Communities at Artisan Lakes, L.L.C.  CGC1519714. All rights reserved.";
   } else if (location === "treasure") {
     sentence += "\n\n";
-    sentence += copyrightYear + "Taylor Morrison of Florida, Inc. CBC1259457. All rights reserved.";
+    sentence += copyrightYear + "Taylor Morrison of Florida, Inc. CBC1259457 &  CGC1529148. All rights reserved.";
   } else if (location === "denver") {
     sentence += "\n\n";
     sentence += copyrightYear + "Taylor Morrison of Colorado, Inc. and William Lyon Homes, Inc., each the “Selling Entity” as applicable to client’s transaction. All rights reserved.";
