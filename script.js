@@ -207,86 +207,86 @@ if (disclaimerOption === "yes") {
 		
 // TMHF if tmhf is "yes"
     if (location === "s-california" && tmhfOption === "yes") {
-        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location: CA: DFPI #4130023| www.nmlsconsumeraccess.org.";
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location: CA: DFPI #4130023| www.nmlsconsumeraccess.org. Buyer is not required to finance through Affiliated Lender to purchase a home; however, Buyer must elect to utilize the services of Affiliated Lender and Seller’s selected Title Company to receive certain promoted incentives as outlined in Buyer’s specific Purchase Agreement, which may differ by time, home selected, community and jurisdiction or contain other qualifying criteria.";
     }
 	else if (location === "bay" && tmhfOption === "yes") {
-        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location: CA: DFPI #4130023| www.nmlsconsumeraccess.org.";
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location: CA: DFPI #4130023| www.nmlsconsumeraccess.org. Buyer is not required to finance through Affiliated Lender to purchase a home; however, Buyer must elect to utilize the services of Affiliated Lender and Seller’s selected Title Company to receive certain promoted incentives as outlined in Buyer’s specific Purchase Agreement, which may differ by time, home selected, community and jurisdiction or contain other qualifying criteria.";
     }
 	else if (location === "sacramento" && tmhfOption === "yes") {
-        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location: CA: DFPI #4130023| www.nmlsconsumeraccess.org.";
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location: CA: DFPI #4130023| www.nmlsconsumeraccess.org. Buyer is not required to finance through Affiliated Lender to purchase a home; however, Buyer must elect to utilize the services of Affiliated Lender and Seller’s selected Title Company to receive certain promoted incentives as outlined in Buyer’s specific Purchase Agreement, which may differ by time, home selected, community and jurisdiction or contain other qualifying criteria.";
     }
 	
 	
 	else if (location === "austin" && tmhfOption === "yes") {
-        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location: TX: #8588| www.nmlsconsumeraccess.org.";
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location: TX: #8588| www.nmlsconsumeraccess.org. Buyer is not required to finance through Affiliated Lender to purchase a home; however, Buyer must elect to utilize the services of Affiliated Lender and Seller’s selected Title Company to receive certain promoted incentives as outlined in Buyer’s specific Purchase Agreement, which may differ by time, home selected, community and jurisdiction or contain other qualifying criteria.";
     }
 	
    else if (location === "dallas" && tmhfOption === "yes") {
-        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location: TX: #8588| www.nmlsconsumeraccess.org.";
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location: TX: #8588| www.nmlsconsumeraccess.org. Buyer is not required to finance through Affiliated Lender to purchase a home; however, Buyer must elect to utilize the services of Affiliated Lender and Seller’s selected Title Company to receive certain promoted incentives as outlined in Buyer’s specific Purchase Agreement, which may differ by time, home selected, community and jurisdiction or contain other qualifying criteria.";
     }
 	
 	
 	else if (location === "houston" && tmhfOption === "yes") {
-        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location: TX: #8588| www.nmlsconsumeraccess.org.";
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location: TX: #8588| www.nmlsconsumeraccess.org. Buyer is not required to finance through Affiliated Lender to purchase a home; however, Buyer must elect to utilize the services of Affiliated Lender and Seller’s selected Title Company to receive certain promoted incentives as outlined in Buyer’s specific Purchase Agreement, which may differ by time, home selected, community and jurisdiction or contain other qualifying criteria.";
     }
 	
 		else if (location === "jacksonville" && tmhfOption === "yes") {
-        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed locations: FL: MLD1920 | GA: #52654 | www.nmlsconsumeraccess.org.";
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed locations: FL: MLD1920 | GA: #52654 | www.nmlsconsumeraccess.org. Buyer is not required to finance through Affiliated Lender to purchase a home; however, Buyer must elect to utilize the services of Affiliated Lender and Seller’s selected Title Company to receive certain promoted incentives as outlined in Buyer’s specific Purchase Agreement, which may differ by time, home selected, community and jurisdiction or contain other qualifying criteria.";
     }
 	
 		else if (location === "naples" && tmhfOption === "yes") {
-        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location FL: MLD1920 | www.nmlsconsumeraccess.org.";
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location FL: MLD1920 | www.nmlsconsumeraccess.org. Buyer is not required to finance through Affiliated Lender to purchase a home; however, Buyer must elect to utilize the services of Affiliated Lender and Seller’s selected Title Company to receive certain promoted incentives as outlined in Buyer’s specific Purchase Agreement, which may differ by time, home selected, community and jurisdiction or contain other qualifying criteria.";
     }
 	
 		else if (location === "orlando" && tmhfOption === "yes") {
-        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location FL: MLD1920 | www.nmlsconsumeraccess.org.";
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location FL: MLD1920 | www.nmlsconsumeraccess.org. Buyer is not required to finance through Affiliated Lender to purchase a home; however, Buyer must elect to utilize the services of Affiliated Lender and Seller’s selected Title Company to receive certain promoted incentives as outlined in Buyer’s specific Purchase Agreement, which may differ by time, home selected, community and jurisdiction or contain other qualifying criteria.";
     }
 	
 		else if (location === "sarasota" && tmhfOption === "yes") {
-        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location FL: MLD1920 | www.nmlsconsumeraccess.org.";
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location FL: MLD1920 | www.nmlsconsumeraccess.org. Buyer is not required to finance through Affiliated Lender to purchase a home; however, Buyer must elect to utilize the services of Affiliated Lender and Seller’s selected Title Company to receive certain promoted incentives as outlined in Buyer’s specific Purchase Agreement, which may differ by time, home selected, community and jurisdiction or contain other qualifying criteria.";
     }
 	
 		else if (location === "tampa" && tmhfOption === "yes") {
-        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location FL: MLD1920 | www.nmlsconsumeraccess.org.";
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location FL: MLD1920 | www.nmlsconsumeraccess.org. Buyer is not required to finance through Affiliated Lender to purchase a home; however, Buyer must elect to utilize the services of Affiliated Lender and Seller’s selected Title Company to receive certain promoted incentives as outlined in Buyer’s specific Purchase Agreement, which may differ by time, home selected, community and jurisdiction or contain other qualifying criteria.";
     }
 	
 		else if (location === "treasure" && tmhfOption === "yes") {
-        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location FL: MLD1920 | www.nmlsconsumeraccess.org.";
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location FL: MLD1920 | www.nmlsconsumeraccess.org. Buyer is not required to finance through Affiliated Lender to purchase a home; however, Buyer must elect to utilize the services of Affiliated Lender and Seller’s selected Title Company to receive certain promoted incentives as outlined in Buyer’s specific Purchase Agreement, which may differ by time, home selected, community and jurisdiction or contain other qualifying criteria.";
     }
 	
 		else if (location === "denver" && tmhfOption === "yes") {
-        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed locations: CO: Registration #8588, PH# 866-379-5390 | www.nmlsconsumeraccess.org.";
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed locations: CO: Registration #8588, PH# 866-379-5390 | www.nmlsconsumeraccess.org. Buyer is not required to finance through Affiliated Lender to purchase a home; however, Buyer must elect to utilize the services of Affiliated Lender and Seller’s selected Title Company to receive certain promoted incentives as outlined in Buyer’s specific Purchase Agreement, which may differ by time, home selected, community and jurisdiction or contain other qualifying criteria.";
     }
 		else if (location === "lasvegas" && tmhfOption === "yes") {
-        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location: NV: #3938 (branch located at 1820 Festival Plaza Dr, Ste. 220A, Las Vegas, NV 89135 PH# 702-680-1085) (“Affiliated Lender”). | www.nmlsconsumeraccess.org.";
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location: NV: #3938 (branch located at 1820 Festival Plaza Dr, Ste. 220A, Las Vegas, NV 89135 PH# 702-680-1085) (“Affiliated Lender”). | www.nmlsconsumeraccess.org. Buyer is not required to finance through Affiliated Lender to purchase a home; however, Buyer must elect to utilize the services of Affiliated Lender and Seller’s selected Title Company to receive certain promoted incentives as outlined in Buyer’s specific Purchase Agreement, which may differ by time, home selected, community and jurisdiction or contain other qualifying criteria.";
     }
 	
 	else if (location === "phoenix" && tmhfOption === "yes") {
-        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location: AZ: #0917436 | www.nmlsconsumeraccess.org.";
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location: AZ: #0917436 | www.nmlsconsumeraccess.org. Buyer is not required to finance through Affiliated Lender to purchase a home; however, Buyer must elect to utilize the services of Affiliated Lender and Seller’s selected Title Company to receive certain promoted incentives as outlined in Buyer’s specific Purchase Agreement, which may differ by time, home selected, community and jurisdiction or contain other qualifying criteria.";
     }
 	
 	else if (location === "portland" && tmhfOption === "yes") {
-        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location: OR: #ML-4272 | www.nmlsconsumeraccess.org.";
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location: OR: #ML-4272 | www.nmlsconsumeraccess.org. Buyer is not required to finance through Affiliated Lender to purchase a home; however, Buyer must elect to utilize the services of Affiliated Lender and Seller’s selected Title Company to receive certain promoted incentives as outlined in Buyer’s specific Purchase Agreement, which may differ by time, home selected, community and jurisdiction or contain other qualifying criteria.";
     }
 	
 	else if (location === "seattle" && tmhfOption === "yes") {
-        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed locations: WA: #CL-8588 |www.nmlsconsumeraccess.org.";
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed locations: WA: #CL-8588 |www.nmlsconsumeraccess.org. Buyer is not required to finance through Affiliated Lender to purchase a home; however, Buyer must elect to utilize the services of Affiliated Lender and Seller’s selected Title Company to receive certain promoted incentives as outlined in Buyer’s specific Purchase Agreement, which may differ by time, home selected, community and jurisdiction or contain other qualifying criteria.";
     }
 	
 	else if (location === "atlanta" && tmhfOption === "yes") {
-        sentence += "\n\n*Taylor Morrison Home Funding, Inc. NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751. Licensed location: GA: #52654 | www.nmlsconsumeraccess.org.";
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc. NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751. Licensed location: GA: #52654 | www.nmlsconsumeraccess.org. Buyer is not required to finance through Affiliated Lender to purchase a home; however, Buyer must elect to utilize the services of Affiliated Lender and Seller’s selected Title Company to receive certain promoted incentives as outlined in Buyer’s specific Purchase Agreement, which may differ by time, home selected, community and jurisdiction or contain other qualifying criteria.";
     }
 	
 	else if (location === "charlotte" && tmhfOption === "yes") {
-        sentence += "\n\n*Taylor Morrison Home Funding, Inc. NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751. Licensed locations: NC: #L-191654 | SC: #MLS-8588 | www.nmlsconsumeraccess.org.";
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc. NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751. Licensed locations: NC: #L-191654 | SC: #MLS-8588 | www.nmlsconsumeraccess.org. Buyer is not required to finance through Affiliated Lender to purchase a home; however, Buyer must elect to utilize the services of Affiliated Lender and Seller’s selected Title Company to receive certain promoted incentives as outlined in Buyer’s specific Purchase Agreement, which may differ by time, home selected, community and jurisdiction or contain other qualifying criteria.";
     }
 	
 	else if (location === "raleigh" && tmhfOption === "yes") {
-        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed locations: OR: #ML-4272 | www.nmlsconsumeraccess.org.";
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed locations: OR: #ML-4272 | www.nmlsconsumeraccess.org. Buyer is not required to finance through Affiliated Lender to purchase a home; however, Buyer must elect to utilize the services of Affiliated Lender and Seller’s selected Title Company to receive certain promoted incentives as outlined in Buyer’s specific Purchase Agreement, which may differ by time, home selected, community and jurisdiction or contain other qualifying criteria.";
     }
 	
 	else if (location === "corp" && tmhfOption === "yes") {
-        sentence += "\n\n*Taylor Morrison Home Funding, Inc. (“Affiliated Lender”), NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location: AZ: #0917436 | CA: DFPI #4130023 | CO: Registration #8588, PH# (866) 379-5390 | FL: MLD1920 | GA: #52654 | NV: #3938 (branch located at 1820 Festival Plaza Dr., Ste. 220A, Las Vegas, NV 89135 PH# (702) 680-1085)| NC: #L-191654 | OR: #ML-4272 | SC: #MLS-8588 | TX: #8588 | WA: #CL-8588 | www.nmlsconsumeraccess.org.";
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc. (“Affiliated Lender”), NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location: AZ: #0917436 | CA: DFPI #4130023 | CO: Registration #8588, PH# (866) 379-5390 | FL: MLD1920 | GA: #52654 | NV: #3938 (branch located at 1820 Festival Plaza Dr., Ste. 220A, Las Vegas, NV 89135 PH# (702) 680-1085)| NC: #L-191654 | OR: #ML-4272 | SC: #MLS-8588 | TX: #8588 | WA: #CL-8588 | www.nmlsconsumeraccess.org. Buyer is not required to finance through Affiliated Lender to purchase a home; however, Buyer must elect to utilize the services of Affiliated Lender and Seller’s selected Title Company to receive certain promoted incentives as outlined in Buyer’s specific Purchase Agreement, which may differ by time, home selected, community and jurisdiction or contain other qualifying criteria.";
     }
 	
 		
@@ -296,13 +296,13 @@ if (disclaimerOption === "yes") {
 
   if (location === "s-california") {
     sentence += "\n\n";
-    sentence += copyrightYear + "Taylor Morrison of California, LLC, William Lyon Homes, Inc. and RSI Communities-California, LLC. All rights reserved.";
+    sentence += "Taylor Morrison Services, Inc., DRE #00968975; Taylor Morrison Services, Inc., CSLB License #519465 and William Lyon Homes, Inc., CSLB License #527293. " +copyrightYear + "Taylor Morrison of California, LLC, William Lyon Homes, Inc. and RSI Communities-California, LLC. All rights reserved.";
   } else if (location === "sacramento") {
     sentence += "\n\n";
-    sentence += copyrightYear + "Taylor Morrison of California, LLC. All rights reserved.";
+    sentence += "Taylor Morrison Services, Inc., DRE #00968975; Taylor Morrison Services, Inc., CSLB License #519465. " +copyrightYear + "Taylor Morrison of California, LLC. All rights reserved.";
   } else if (location === "bay") {
     sentence += "\n\n";
-    sentence += copyrightYear + "Taylor Morrison of California, LLC and William Lyon Homes, Inc. All rights reserved.";
+    sentence += "Taylor Morrison Services, Inc., DRE #00968975; Taylor Morrison Services, Inc., CSLB License #519465 and William Lyon Homes, Inc., CSLB License #527293. " +copyrightYear + "Taylor Morrison of California, LLC and William Lyon Homes, Inc. All rights reserved.";
   } else if (location === "jacksonville") {
     sentence += "\n\n";
     sentence += copyrightYear + "Taylor Morrison of Florida, Inc. CBC1265083 Avatar Properties Inc. CBC1254089. All rights reserved.";
@@ -344,13 +344,13 @@ if (disclaimerOption === "yes") {
     sentence += copyrightYear + "Taylor Morrison of Carolinas, Inc., NCGCL #76596, SCGCL #323 and Bonterra Builders, LLC NCGCL 76479. All rights reserved.";
   } else if (location === "raleigh") {
     sentence += "\n\n";
-    sentence += copyrightYear + "Taylor Morrison of Carolinas, Inc., NCGCL #76596. AV Homes of Raleigh, LLC., NCGCL #79166. All rights reserved.";
+    sentence += copyrightYear + "Taylor Morrison of Carolinas, Inc., NCGCL #76596. AV Homes of Raleigh, LLC., NCGCL #79166. All rights reserved. ";
   } else if (location === "austin") {
     sentence += "\n\n";
     sentence += copyrightYear + "Taylor Morrison of Texas, Inc. and WLH Communities – Texas LLC, each the “Selling Entity” as applicable to client’s transaction.  All rights reserved.";
   } else if (location === "dallas") {
     sentence += "\n\n";
-    sentence += copyrightYear + "Taylor Morrison of Texas, Inc., AVH DFW, LLC and Darling Homes of Texas, LLC, each the “Selling Entity” as applicable to client’s transaction. All rights reserved. ";
+    sentence += copyrightYear + "Taylor Morrison of Texas, Inc. and Darling Homes of Texas, LLC, each the “Selling Entity” as applicable to client’s transaction. ";
   } else if (location === "houston") {
     sentence += "\n\n";
     sentence += copyrightYear + "Taylor Morrison of Texas, Inc. and Darling Homes of Texas, LLC, each the “Selling Entity” as applicable to client’s transaction. All rights reserved.";
