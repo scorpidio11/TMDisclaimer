@@ -107,11 +107,12 @@ if (calAD === "no") {
 	
 //	disclaimer content - All Answers
 	
-   if (calAD === "yes") {
+   if ( location === "s-california" || location === "lasvegas" || location === "phoenix" && calAD === "yes") {
 
     sentence += "WARNING: THE CALIFORNIA DEPARTMENT OF REAL ESTATE HAS NOT INSPECTED, EXAMINED, OR QUALIFIED THIS OFFERING.";
   }
-		
+	
+	
 
   if (trustedOption === "yes") {
     sentence += "\n\n"; 
@@ -326,10 +327,10 @@ if (disclaimerOption === "yes") {
     sentence += copyrightYear + "Taylor Morrison of Colorado, Inc. and William Lyon Homes, Inc., each the “Selling Entity” as applicable to client’s transaction. All rights reserved.";
   } else if (location === "lasvegas") {
     sentence += "\n\n";
-    sentence += copyrightYear + "Robert Evon, Sales Manager #BS.0029612.SMGR; William Lyon Homes, Inc. dba Taylor Morrison, NSCL #0040722. All rights reserved.";
+    sentence += "No offer to sell or lease any property until Nevada Real Estate Division approval of the Public Offering Statement for the above-described Property. Complete details available. This is not an offering in any state where prohibited or otherwise restricted by law. Please visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable) and information about active Las Vegas-area communities." + copyrightYear + "Robert Evon, Sales Manager #BS.0029612.SMGR; William Lyon Homes, Inc. dba Taylor Morrison, NSCL #0040722. All rights reserved.";
   } else if (location === "phoenix") {
     sentence += "\n\n";
-    sentence += "No binding offer to sell or lease may be made or accepted prior to the issuance of the final AZ Subdivision Public Report for the Community. A public report is available at the AZ Real Estate Department’s website at www.azre.gov. Not an offer to sell or lease where prohibited or otherwise restricted by law." + copyrightYear + "TM Homes of Arizona, Inc., AZ DRE # CO535669000; AV Homes of Arizona, LLC, AZ DRE # LC632206000; William Lyon Southwest, Inc., AZ DRE # CO521011000. All rights reserved.";
+    sentence += "No offer to sell or lease may be made or accepted prior to the issuance of the final AZ Subdivision Disclosure Report. A public report is available at the State Real Estate Department’s website at www.azre.gov for the property of interest that is now open for sales. Please see a Community Sales Manager for details or visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable)." + copyrightYear + "TM Homes of Arizona, Inc., AZ DRE # CO535669000; AV Homes of Arizona, LLC, AZ DRE # LC632206000; William Lyon Southwest, Inc., AZ DRE # CO521011000. All rights reserved.";
   } else if (location === "portland") {
     sentence += "\n\n";
     sentence += copyrightYear + "Cascadian South L.L.C., Oregon Real Estate License No. 950300179; Taylor Morrison Northwest, LLC, Oregon CCB License No. 204238; South Cooper Mountain Owner, LLC, Oregon CCB License No. 222618; Cascadian King Company LLC, Washington Real Estate License No. 8193; Taylor Morrison Northwest, LLC, Washington License No. TAYLOMN791L8. All rights reserved.";

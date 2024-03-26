@@ -88,11 +88,12 @@
 						<h3 class="colorlib-heading">Disclaimer Generator</h3>
 						  <p>This simple TM generator covers 80% of our email subjects based on the content. For any additional or unique subjects, please visit the Search and Glossary section and add them accordingly.					  </p> <p>
                             <strong> How to use:</strong><br>
-1. Begin by select divsion and clicking the "Select All No" button.<br>
-2. Select the "Yes" radio button when applying.<br>
-3. Click the "Generate Disclaimer" and "Copy to Clipboard" buttons.<br>&nbsp;</p>
+1. Begin by "<strong>Select Divsion</strong>" and clicking the "<strong>Select All No</strong>" button.<br>
+2. Select the "<strong>Yes</strong>" radio button when applying.<br>
+3. Click the "<strong>Generate Disclaimer</strong>" and "<strong>Copy to Clipboard</strong>" buttons.<br>
+&nbsp;</p>
   <div class="graybox" >
-    <label for="location"> <strong><h4>Select Division:</h4> </strong> </label>
+    <label for="location"> <h4><strong>Required:</strong></h4> </label>
     <select id="location" required  >
       <option value="">Select Division</option>
       <option value="bay">Bay</option>
@@ -132,26 +133,16 @@
 	
 
 	  
-    <button class="checkmark-button yes" onclick="selectAllYes()">Select All Yes (Reset Form)</button> <button class="checkmark-button no" onclick="selectAllNo()">Select All No</button> <br>
+    <button class="checkmark-button yes" onclick="selectAllYes()">Select All Yes (Reset Form)</button> <button class="checkmark-button no" onclick="selectAllNo()">Select All No (Click to Start)</button> <br>
     <br>
   </div>
 	
   <div class="question" >
   <p >Include default disclaimer?  </p>
     <input type="radio" name="disclaimer" value="yes" checked>
-    Yes <br>
+    Yes <br><br>
 
   </div> 
-
-	<div class="line" id="divider">&nbsp;</div>
-	
-	<div class="question" id="question17" style="display:none;">
-    <p>Have you had approval to market to the state of California?</p>
-    <input type="radio" name="calad" value="yes" checked>
-    Yes
-    <input type="radio" name="calad" value="no">  No <br><br>
-	   </div> 
-
 	
   <div class="question" id="question1">
     <p>Include America's Most Trusted&reg;?</p>
@@ -159,6 +150,16 @@
     Yes
     <input type="radio" name="trusted" value="no">  No <br><br>
 	   </div> 
+
+	<div class="line" id="divider">&nbsp;</div>
+	
+	<div class="question" id="question17">
+    <p>AZ, CA and LV only - Have you had approval to market to the state of California?</p>
+    <input type="radio" name="calad" value="yes" checked>
+    Yes
+    <input type="radio" name="calad" value="no">  No <br><br>
+	   </div> 
+
 
 	
 	<div class="line" id="divider">&nbsp;</div>
@@ -330,6 +331,23 @@
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
  <script src="script.js"></script>
+		<script>
+    function generateDisclaimer() {
+        var division = document.getElementById("location").value;
+        if (division === "") {
+            alert("Please select a division.");
+            return;
+        }
+
+        // Code for generating disclaimer goes here
+    }
+
+    function copyToClipboard() {
+        // Code for copying to clipboard goes here
+    }
+
+    // Other functions if needed
+</script>
 	</body>
 </html>
 
