@@ -110,7 +110,7 @@ if (esVideo === "no") {
 	
 //	disclaimer content - All Answers
 	
-   if ( location === "summerbend" || location === "mountainfall" || location === "cantamia" || location === "vizcaya" || location === "turkeycreek"|| location === "madeiraranch" && calAD === "yes") {
+   if ( location === "summerbend"&& calAD === "yes" || location === "mountainfall"&& calAD === "yes" || location === "cantamia"&& calAD === "yes" || location === "vizcaya" && calAD === "yes"|| location === "turkeycreek"&& calAD === "yes"|| location === "madeiraranch" && calAD === "yes") {
 
     sentence += "WARNING: THE CALIFORNIA DEPARTMENT OF REAL ESTATE HAS NOT INSPECTED, EXAMINED, OR QUALIFIED THIS OFFERING.";
   }
