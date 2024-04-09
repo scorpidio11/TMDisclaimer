@@ -107,7 +107,7 @@ if (calAD === "no") {
 	
 //	disclaimer content - All Answers
 	
-   if ( location === "s-california" || location === "lasvegas" || location === "phoenix" && calAD === "yes") {
+   if ( location === "portland"&& calAD === "yes" || location === "lasvegas" && calAD === "yes"|| location === "phoenix" && calAD === "yes"|| location === "denver" && calAD === "yes") {
 
     sentence += "WARNING: THE CALIFORNIA DEPARTMENT OF REAL ESTATE HAS NOT INSPECTED, EXAMINED, OR QUALIFIED THIS OFFERING.";
   }
@@ -121,7 +121,7 @@ if (calAD === "no") {
 
 if (disclaimerOption === "yes") {
     sentence += "\n\n";
-    sentence += "All information (including, but not limited to prices, views, availability, school assignments and ratings, incentives, floor plans, site plans, features, standards and options, assessments, and fees, planned amenities, programs, conceptual artists' renderings, tax rates and community development plans) is not guaranteed and remains subject to change, or delay without notice. This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable). ";
+    sentence += "All information (including, but not limited to prices, views, availability, school assignments and ratings, incentives, floor plans, site plans, features, standards and options, assessments, and fees, planned amenities, programs, conceptual artists' renderings, tax rates and community development plans) is not guaranteed and remains subject to change, or delay without notice.";
   }
   if (StockPhotosOption === "yes") {
     sentence += "\n\n";
@@ -178,7 +178,7 @@ if (disclaimerOption === "yes") {
 	
   if (locationLocation === "yes") {
     sentence += "\n\n";
-    sentence += "Any reference to amenities, attractions, local events and services outside of the Community are provided for general informational purposes only without guarantee and represents a non-exhaustive summary of existing and/or planned neighborhood merchants, facilities and services that remain subject to change outside of Taylor Morrison’s control. All homes subject to prior sales. ";
+    sentence += "Any reference to amenities, attractions, local events and services outside of the Community are provided for general informational purposes only without guarantee and represents a non-exhaustive summary of existing and/or planned neighborhood merchants, facilities and services that remain subject to change outside of Taylor Morrison’s control. All homes subject to prior sale. ";
   }
 	
 	
@@ -297,34 +297,34 @@ if (disclaimerOption === "yes") {
 
   if (location === "s-california") {
     sentence += "\n\n";
-    sentence += "Taylor Morrison Services, Inc., DRE #00968975; Taylor Morrison Services, Inc., CSLB License #519465 and William Lyon Homes, Inc., CSLB License #527293. " +copyrightYear + "Taylor Morrison of California, LLC, William Lyon Homes, Inc. and RSI Communities-California, LLC. All rights reserved.";
+    sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable). "+copyrightYear +"Taylor Morrison Services, Inc., DRE #00968975; Taylor Morrison Services, Inc., CSLB License #519465 and William Lyon Homes, Inc., CSLB License #527293. " + "Taylor Morrison of California, LLC, William Lyon Homes, Inc. and RSI Communities-California, LLC. All rights reserved.";
   } else if (location === "sacramento") {
     sentence += "\n\n";
-    sentence += "Taylor Morrison Services, Inc., DRE #00968975; Taylor Morrison Services, Inc., CSLB License #519465. " +copyrightYear + "Taylor Morrison of California, LLC. All rights reserved.";
+    sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable). "+copyrightYear +"Taylor Morrison Services, Inc., DRE #00968975; Taylor Morrison Services, Inc., CSLB License #519465. " +"Taylor Morrison of California, LLC. All rights reserved.";
   } else if (location === "bay") {
     sentence += "\n\n";
-    sentence += "Taylor Morrison Services, Inc., DRE #00968975; Taylor Morrison Services, Inc., CSLB License #519465 and William Lyon Homes, Inc., CSLB License #527293. " +copyrightYear + "Taylor Morrison of California, LLC and William Lyon Homes, Inc. All rights reserved.";
+    sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable). "+ copyrightYear +"Taylor Morrison Services, Inc., DRE #00968975; Taylor Morrison Services, Inc., CSLB License #519465 and William Lyon Homes, Inc., CSLB License #527293. " + "Taylor Morrison of California, LLC and William Lyon Homes, Inc. All rights reserved.";
   } else if (location === "jacksonville") {
     sentence += "\n\n";
-    sentence += copyrightYear + "Taylor Morrison of Florida, Inc. CBC1265083 Avatar Properties Inc. CBC1254089. All rights reserved.";
+    sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable). "+ copyrightYear + "Taylor Morrison of Florida, Inc. CBC1265083 Avatar Properties Inc. CBC1254089. All rights reserved.";
   } else if (location === "naples") {
     sentence += "\n\n";
-    sentence += copyrightYear + "Taylor Morrison of Florida, Inc. CBC1263209. All rights reserved.";
+    sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable). "+ copyrightYear + "Taylor Morrison of Florida, Inc. CBC1263209. All rights reserved.";
   } else if (location === "orlando") {
     sentence += "\n\n";
-    sentence += copyrightYear + "Taylor Morrison of Florida, Inc. CBC1257462, Avatar Properties Inc. CBC1254089. CBC1254089. All rights reserved.";
+    sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable). "+ copyrightYear + "Taylor Morrison of Florida, Inc. CBC1257462, Avatar Properties Inc. CBC1254089. CBC1254089. All rights reserved.";
   } else if (location === "sarasota") {
     sentence += "\n\n";
-    sentence += copyrightYear + "Taylor Morrison of Florida, Inc. CBC1259457, CGC1529148. All rights reserved.";
+    sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable). "+ copyrightYear + "Taylor Morrison of Florida, Inc. CBC1259457, CGC1529148. All rights reserved.";
   } else if (location === "tampa") {
     sentence += "\n\n";
-    sentence += copyrightYear + "Taylor Morrison of Florida, Inc. CRC1328617, Taylor Woodrow Communities at Artisan Lakes, L.L.C.  CGC1519714. All rights reserved.";
+    sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable). "+ copyrightYear + "Taylor Morrison of Florida, Inc. CRC1328617, Taylor Woodrow Communities at Artisan Lakes, L.L.C.  CGC1519714. All rights reserved.";
   } else if (location === "treasure") {
     sentence += "\n\n";
-    sentence += copyrightYear + "Taylor Morrison of Florida, Inc. CBC1259457 &  CGC1529148. All rights reserved.";
+    sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable). "+ copyrightYear + "Taylor Morrison of Florida, Inc. CBC1259457 &  CGC1529148. All rights reserved.";
   } else if (location === "denver") {
     sentence += "\n\n";
-    sentence += copyrightYear + "Taylor Morrison of Colorado, Inc. and William Lyon Homes, Inc., each the “Selling Entity” as applicable to client’s transaction. All rights reserved.";
+    sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable). "+ copyrightYear + "Taylor Morrison of Colorado, Inc. and William Lyon Homes, Inc., each the “Selling Entity” as applicable to client’s transaction. All rights reserved.";
   } else if (location === "lasvegas") {
     sentence += "\n\n";
     sentence += "No offer to sell or lease any property until Nevada Real Estate Division approval of the Public Offering Statement for the above-described Property. Complete details available. This is not an offering in any state where prohibited or otherwise restricted by law. Please visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable) and information about active Las Vegas-area communities." + copyrightYear + "Robert Evon, Sales Manager #BS.0029612.SMGR; William Lyon Homes, Inc. dba Taylor Morrison, NSCL #0040722. All rights reserved.";
@@ -333,32 +333,32 @@ if (disclaimerOption === "yes") {
     sentence += "No offer to sell or lease may be made or accepted prior to the issuance of the final AZ Subdivision Disclosure Report. A public report is available at the State Real Estate Department’s website at www.azre.gov for the property of interest that is now open for sales. Please see a Community Sales Manager for details or visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable)." + copyrightYear + "TM Homes of Arizona, Inc., AZ DRE # CO535669000; AV Homes of Arizona, LLC, AZ DRE # LC632206000; William Lyon Southwest, Inc., AZ DRE # CO521011000. All rights reserved.";
   } else if (location === "portland") {
     sentence += "\n\n";
-    sentence += copyrightYear + "Cascadian South L.L.C., Oregon Real Estate License No. 950300179; Taylor Morrison Northwest, LLC, Oregon CCB License No. 204238; South Cooper Mountain Owner, LLC, Oregon CCB License No. 222618; Cascadian King Company LLC, Washington Real Estate License No. 8193; Taylor Morrison Northwest, LLC, Washington License No. TAYLOMN791L8. All rights reserved.";
+    sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable). "+ copyrightYear + "Cascadian South L.L.C., Oregon Real Estate License No. 950300179; Taylor Morrison Northwest, LLC, Oregon CCB License No. 204238; South Cooper Mountain Owner, LLC, Oregon CCB License No. 222618; Cascadian King Company LLC, Washington Real Estate License No. 8193; Taylor Morrison Northwest, LLC, Washington License No. TAYLOMN791L8. All rights reserved.";
   } else if (location === "seattle") {
     sentence += "\n\n";
-    sentence += copyrightYear + "Taylor Morrison Northwest, LLC WA Contractor License #TAYLOMN791L8. Broker license: Cascadian King Company LLC #8193. All rights reserved.";
+    sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable). "+ copyrightYear + "Taylor Morrison Northwest, LLC WA Contractor License #TAYLOMN791L8. Broker license: Cascadian King Company LLC #8193. All rights reserved.";
   } else if (location === "atlanta") {
     sentence += "\n\n";
-    sentence += copyrightYear + "Taylor Morrison Realty of Georgia, Inc. Firm #75069. Taylor Morrison of Georgia, LLC. All rights reserved. ";
+    sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable). "+ copyrightYear + "Taylor Morrison Realty of Georgia, Inc. Firm #75069. Taylor Morrison of Georgia, LLC. All rights reserved. ";
   } else if (location === "charlotte") {
     sentence += "\n\n";
-    sentence += copyrightYear + "Taylor Morrison of Carolinas, Inc., NCGCL #76596, SCGCL #323 and Bonterra Builders, LLC NCGCL 76479. All rights reserved.";
+    sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable). "+ copyrightYear + "Taylor Morrison of Carolinas, Inc., NCGCL #76596, SCGCL #323 and Bonterra Builders, LLC NCGCL 76479. All rights reserved.";
   } else if (location === "raleigh") {
     sentence += "\n\n";
-    sentence += copyrightYear + "Taylor Morrison of Carolinas, Inc., NCGCL #76596. AV Homes of Raleigh, LLC., NCGCL #79166. All rights reserved. ";
+    sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable). "+ copyrightYear + "Taylor Morrison of Carolinas, Inc., NCGCL #76596. AV Homes of Raleigh, LLC., NCGCL #79166. All rights reserved. ";
   } else if (location === "austin") {
     sentence += "\n\n";
-    sentence += copyrightYear + "Taylor Morrison of Texas, Inc. and WLH Communities – Texas LLC, each the “Selling Entity” as applicable to client’s transaction.  All rights reserved.";
+    sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable). "+ copyrightYear + "Taylor Morrison of Texas, Inc. and WLH Communities – Texas LLC, each the “Selling Entity” as applicable to client’s transaction.  All rights reserved.";
   } else if (location === "dallas") {
     sentence += "\n\n";
-    sentence += copyrightYear + "Taylor Morrison of Texas, Inc. and Darling Homes of Texas, LLC, each the “Selling Entity” as applicable to client’s transaction. ";
+    sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable). "+ copyrightYear + "Taylor Morrison of Texas, Inc. and Darling Homes of Texas, LLC, each the “Selling Entity” as applicable to client’s transaction. ";
   } else if (location === "houston") {
     sentence += "\n\n";
-    sentence += copyrightYear + "Taylor Morrison of Texas, Inc. and Darling Homes of Texas, LLC, each the “Selling Entity” as applicable to client’s transaction. All rights reserved.";
+    sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable). "+ copyrightYear + "Taylor Morrison of Texas, Inc. and Darling Homes of Texas, LLC, each the “Selling Entity” as applicable to client’s transaction. All rights reserved.";
   }
 		else if (location === "corp") {
     sentence += "\n\n";
-    sentence += copyrightYear + "Taylor Morrison, Inc. All rights reserved.";
+    sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable). "+ copyrightYear + "Taylor Morrison, Inc. All rights reserved.";
   }
 	
 
