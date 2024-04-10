@@ -235,7 +235,7 @@ if (disclaimerOption === "yes" && location === "solivita" ) {
 
   if (renderingOption === "yes") {
     sentence += "\n\n";
-    sentence += "Elevations are an artist’s conception and are not intended to show specific detailing.";
+    sentence += "Representative Photos above for illustrative purposes only of available plans, features and structural option ideas; not necessarily the actual community or the actual homes that will be available.";
   }
 
   if (floorPlan === "yes") {
