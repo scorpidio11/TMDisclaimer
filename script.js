@@ -291,7 +291,10 @@ if (disclaimerOption === "yes") {
     }
 	
 		
-
+	else if (location === "indy" && tmhfOption === "yes") {
+        sentence += "\n\n*Taylor Morrison Home Funding, Inc. (“Affiliated Lender”), ***** Need correct INDY info here NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location: AZ: #0917436 | CA: DFPI #4130023 | CO: Registration #8588, PH# (866) 379-5390 | FL: MLD1920 | GA: #52654 | NV: #3938 (branch located at 1820 Festival Plaza Dr., Ste. 220A, Las Vegas, NV 89135 PH# (702) 680-1085)| NC: #L-191654 | OR: #ML-4272 | SC: #MLS-8588 | TX: #8588 | WA: #CL-8588. ***** Buyer is not required to finance through Affiliated Lender to purchase a home; however, buyer must elect to utilize the services of Affiliated Lender and the services of Closing Agent  suggested by Seller only to receive certain promoted incentives as outlined in Buyer’s specific Purchase Agreement, which may differ by time, home selected, community and jurisdiction or contain other qualifying criteria. All loans are subject to underwriting and loan qualification of the lender. Services not available in all states. Rates, terms and conditions offered are subject to change without notice. Additional license information available at NMLS Consumer Access: www.nmlsconsumeraccess.org. ";
+    }
+	
 	
 // Entity Info"	
 
@@ -327,7 +330,7 @@ if (disclaimerOption === "yes") {
     sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable). "+ copyrightYear + "Taylor Morrison of Colorado, Inc. and William Lyon Homes, Inc., each the “Selling Entity” as applicable to client’s transaction. All rights reserved.";
   } else if (location === "lasvegas") {
     sentence += "\n\n";
-    sentence += "No offer to sell or lease any property until Nevada Real Estate Division approval of the Public Offering Statement for the above-described Property. Complete details available. This is not an offering in any state where prohibited or otherwise restricted by law. Please visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable) and information about active Las Vegas-area communities." + copyrightYear + "Robert Evon, Sales Manager #BS.0029612.SMGR; William Lyon Homes, Inc. dba Taylor Morrison, NSCL #0040722. All rights reserved.";
+    sentence += "No offer to sell or lease any property until submittal of the Public Offering Statement for the above-described Property to the Nevada Real Estate Division. Complete details available. This is not an offering in any state where prohibited or otherwise restricted by law. Please visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable) and information about active Las Vegas-area communities." + copyrightYear + "Robert Evon, Sales Manager #BS.0029612.SMGR; William Lyon Homes, Inc. dba Taylor Morrison, NSCL #0040722. All rights reserved.";
   } else if (location === "phoenix") {
     sentence += "\n\n";
     sentence += "No offer to sell or lease may be made or accepted prior to the issuance of the final AZ Subdivision Disclosure Report. A public report is available at the State Real Estate Department’s website at www.azre.gov for the property of interest that is now open for sales. Please see a Community Sales Manager for details or visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable)." + copyrightYear + "TM Homes of Arizona, Inc., AZ DRE # CO535669000; AV Homes of Arizona, LLC, AZ DRE # LC632206000; William Lyon Southwest, Inc., AZ DRE # CO521011000. All rights reserved.";
@@ -361,7 +364,10 @@ if (disclaimerOption === "yes") {
     sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable). "+ copyrightYear + "Taylor Morrison, Inc. All rights reserved.";
   }
 	
-
+	else if (location === "indy") {
+    sentence += "\n\n";
+    sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable). "+ copyrightYear + "Taylor Morrison of Indianapolis, LLC, Pyatt Homes, Inc. All rights reserved.";
+  }
   //else if (location === "dallas" || location === "houston" || location === "austin") {
   //    sentence += "\n\n";
   //    sentence += copyrightYear + "Taylor Morrison of Texas, Inc. All rights reserved.";
