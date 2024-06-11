@@ -161,7 +161,7 @@ if (disclaimerOption === "yes") {
 
   if (qmipricingInfo === "yes") {
     sentence += "\n\n";
-    sentence += "Featured Home current price shown above excludes closing costs and already includes any lot premium, Seller installed options and upgrades; Buyer-selected options are no longer available. Featured Home subject to prior sale. Community Association or other fees may be required.";
+    sentence += "Featured Home current price shown above excludes furniture, decorative accessories, as well as closing costs and will include any lot premium, Seller installed options and upgrades; Buyer-selected options will not be available on quick move-in homes. Quick Move-In Homes will be subject to prior sale. Community Association or other fees may be required.";
   }
 
 
@@ -291,10 +291,7 @@ if (disclaimerOption === "yes") {
     }
 	
 		
-	else if (location === "indy" && tmhfOption === "yes") {
-        sentence += "\n\n*Taylor Morrison Home Funding, Inc., NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location: IN: #DFI-66890, PH# 866 - 379 - 5390. Buyer is not required to finance through Affiliated Lender to purchase a home; however, buyer must elect to utilize the services of Affiliated Lender and the services of Closing Agent  suggested by Seller only to receive certain promoted incentives as outlined in Buyer’s specific Purchase Agreement, which may differ by time, home selected, community and jurisdiction or contain other qualifying criteria. All loans are subject to underwriting and loan qualification of the lender. Services not available in all states. Rates, terms and conditions offered are subject to change without notice. Additional license information available at NMLS Consumer Access: www.nmlsconsumeraccess.org. ";
-    }
-	
+
 	
 // Entity Info"	
 
@@ -364,10 +361,7 @@ if (disclaimerOption === "yes") {
     sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable). "+ copyrightYear + "Taylor Morrison, Inc. All rights reserved.";
   }
 	
-	else if (location === "indy") {
-    sentence += "\n\n";
-    sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable). "+ copyrightYear + "Taylor Morrison of Indianapolis, LLC. All rights reserved.";
-  }
+
   //else if (location === "dallas" || location === "houston" || location === "austin") {
   //    sentence += "\n\n";
   //    sentence += copyrightYear + "Taylor Morrison of Texas, Inc. All rights reserved.";
