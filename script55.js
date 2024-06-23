@@ -260,7 +260,7 @@ if (disclaimerOption === "yes" && location === "solivita" ) {
 
   if (qmipricingInfo === "yes") {
     sentence += "\n\n";
-    sentence += "Featured Home current price shown above excludes furniture, decorative accessories, as well as closing costs and will include any lot premium, Seller installed options and upgrades; Buyer-selected options will not be available on quick move-in homes. Quick Move-In Homes will be subject to prior sale. Community Association or other fees may be required.";
+    sentence += "Featured Home current price shown above excludes closing costs and already includes any lot premium, Seller installed options and upgrades; Buyer-selected options are no longer available. Featured Home subject to prior sale. Community Association or other fees may be required.";
   }
 
 
@@ -441,10 +441,10 @@ if (disclaimerOption === "yes" && location === "solivita" ) {
     sentence +=  "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable)." + copyrightYear + "Taylor Morrison Realty of Georgia, Inc. Firm #75069. Taylor Morrison of Georgia, LLC. All rights reserved. ";
   } else if (location === "charlotte") {
     sentence += "\n\n";
-    sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable)." + copyrightYear + "Taylor Morrison of Carolinas, Inc., NCGCL #76596, SCGCL #323 and Bonterra Builders, LLC NCGCL 76479. All rights reserved.";
+    sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable)." + copyrightYear + "Taylor Morrison of Carolinas, Inc., License No. 125194, NCGCL #76596, All rights reserved.";
   } else if (location === "raleigh") {
     sentence += "\n\n";
-    sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable)." + copyrightYear + "Taylor Morrison of Carolinas, Inc., NCGCL #76596. AV Homes of Raleigh, LLC., NCGCL #79166. All rights reserved. ";
+    sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable)." + copyrightYear + "Taylor Morrison of Carolinas, Inc., NCGCL #76596. AV Homes of Raleigh, NCGCL #79166. All rights reserved.";
   } else if (location === "bonterra") {
     sentence += "\n\n";
     sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable)." + copyrightYear + "Taylor Morrison of Texas, Inc. All rights reserved.";
