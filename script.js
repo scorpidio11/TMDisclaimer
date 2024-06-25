@@ -376,7 +376,7 @@ if (disclaimerOption === "yes") {
 	
 	else if (location === "indy") {
     sentence += "\n\n";
-    sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable). "+ copyrightYear + "Taylor Morrison of Indianapolis, LLC. All rights reserved.";
+    sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable). "+ copyrightYear + "Taylor Morrison of Indiana, LLC. All rights reserved.";
   }
   //else if (location === "dallas" || location === "houston" || location === "austin") {
   //    sentence += "\n\n";
