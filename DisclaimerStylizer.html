@@ -46,13 +46,13 @@ p {
         var inputText = document.getElementById("inputText").value;
         var replacedText = inputText.replace(/http:\/\/www\.taylormorrison\.com|https:\/\/www\.taylormorrison\.com|www\.taylormorrison\.com\/home-financing|Taylor Morrison homepage|www\.lifestoryresearch\.com|Taylor Morrison Home Financing homepage|www\.taylormorrison\.com|www\.nmlsconsumeraccess\.org|NMLS Consumer Access homepage|Lifestory Research homepage|Bloomberg homepage|www\.bloomberg\.com\/gei/gi, function(match) {
             if (match === "www.taylormorrison.com/home-financing" || match === "Taylor Morrison Home Financing homepage") {
-                return '<a href="https://www.taylormorrison.com/home-financing" target="_blank" style="color:#5E5B54;" class="darkmode-text">Taylor Morrison Home Financing homepage</a>';
+                return '<a  alias="TMHFHomepageDisclaimer" href="https://www.taylormorrison.com/home-financing" target="_blank" style="color:#5E5B54;" class="darkmode-text">Taylor Morrison Home Financing homepage</a>';
             } else if (match === "www.lifestoryresearch.com" || match === "Lifestory Research homepage") {
-                return '<a href="https://www.lifestoryresearch.com" target="_blank" style="color:#5E5B54;" class="darkmode-text">Lifestory Research homepage</a>';
+                return '<a alias="TaylorMorrisonHomepageDisclaimer" href="https://www.lifestoryresearch.com" target="_blank" style="color:#5E5B54;" class="darkmode-text">Lifestory Research homepage</a>';
             } else if (match === "www.taylormorrison.com" || match === "Taylor Morrison homepage" || match === "http://www.taylormorrison.com" || match === "https://www.taylormorrison.com") {
                 return '<a href="https://www.taylormorrison.com" target="_blank" style="color:#5E5B54;" class="darkmode-text">Taylor Morrison homepage</a>';
             } else if (match === "www.nmlsconsumeraccess.org" || match === "NMLS Consumer Access homepage") {
-                return '<a href="https://www.nmlsconsumeraccess.org" target="_blank" style="color:#5E5B54;" class="darkmode-text">NMLS Consumer Access homepage</a>';
+                return '<a alias="NMLSHomepageDisclaimer" href="https://www.nmlsconsumeraccess.org" target="_blank" style="color:#5E5B54;" class="darkmode-text">NMLS Consumer Access homepage</a>';
             } else if (match === "www.bloomberg.com/gei" || match === "Bloomberg homepage") {
                 return '<a href="https://www.bloomberg.com/gei" target="_blank" style="color:#5E5B54;" class="darkmode-text">Bloomberg homepage</a>';
             }
