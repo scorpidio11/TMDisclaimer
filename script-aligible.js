@@ -43,7 +43,7 @@ else if (location === "s-california") {
 else if (location === "sacramento") {
     resultText += ` Taylor Morrison Home Funding, Inc., NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location: CA: DFPI #4130023 | www.nmlsconsumeraccess.org.`;
 } else if (location === "portland") {
-    resultText += ` Taylor Morrison Home Funding, Inc., NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location: OR: #ML-4272 | www.nmlsconsumeraccess.org.`;
+    resultText += ` Taylor Morrison Home Funding, Inc., NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed locations: OR: #ML-4272 | WA: #CL-8588 | www.nmlsconsumeraccess.org.`;
 } else if (location === "seattle") {
     resultText += ` Taylor Morrison Home Funding, Inc., NMLS # 8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed locations: WA: #CL-8588 | www.nmlsconsumeraccess.org.`;
 } else if (location === "austin") {
