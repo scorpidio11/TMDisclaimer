@@ -63,7 +63,7 @@ else if (location === "sacramento") {
 } else if (location === "treasure") {
     resultText += ` Taylor Morrison Home Funding, Inc., NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location FL: MLD1920 | www.nmlsconsumeraccess.org.`;
 } else if (location === "denver") {
-    resultText += ` Taylor Morrison Home Funding, Inc., NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed locations: FL: MLD1920 | GA: #52654 | www.nmlsconsumeraccess.org.`;
+    resultText += ` Taylor Morrison Home Funding, Inc. NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751. Licensed locations: CO: Registration #8588, PH# 866-379-5390 | www.nmlsconsumeraccess.org.`;
 } else if (location === "lasvegas") {
     resultText += ` Taylor Morrison Home Funding, Inc., NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location: NV: #3938 (branch located at 1820 Festival Plaza Dr, Ste. 220A, Las Vegas, NV 89135 PH# 702-680-1085) (“Affiliated Lender”). | www.nmlsconsumeraccess.org.`;
 } else if (location === "phoenix") {
