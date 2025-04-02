@@ -109,3 +109,20 @@ input[type='radio']:after {
 	background-color: #D31245;
 	color: #FFFFFF;
 }
+
+
+
+
+	.btn-outline-secondary{
+		border: 2px solid #FFFFFF;
+	} 
+	.btn{
+	min-width: 200px!important; 
+	color:#FFFFFF!important;
+		
+	}
+	#colorlib-aside #colorlib-main-menu ul li a {
+		color:#FFFFFF!important;	
+	}
+	
+	.btn-danger{background-color: #D31245; border: 1px solid #D31245;}
