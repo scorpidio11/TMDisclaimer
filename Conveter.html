@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML File Processor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        #output {
+            white-space: pre-wrap;
+            background: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-top: 20px;
+            text-align: left;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Subtractor</h2>
+    <input type="file" id="fileInput" accept=".html">
+    <button onclick="processFile()">Process File</button>
+    
+    <h3>Processed Output</h3>
+    <div id="output">Processed HTML will appear here...</div>
+
+    <button onclick="copyToClipboard()" id="copyBtn" style="display: none;">Copy Code</button>
+    <button onclick="downloadFile()" id="downloadBtn" style="display: none;">Download Revised HTML</button>
+
+    <script>
+        let processedHTML = '';
+
+        function processFile() {
+            const fileInput = document.getElementById('fileInput');
+            const outputDiv = document.getElementById('output');
+
+            if (!fileInput.files.length) {
+                alert("Please select a file.");
+                return;
+            }
+
+            const file = fileInput.files[0];
+            const reader = new FileReader();
+
+            reader.onload = function(event) {
+                let content = event.target.result;
+
+                const startMarker = "<!--------------------------------------------------\n          HERO IMAGE: Adjust image height\n        ---------------------------------------------------->";
+                const endMarker = "<!-- end footer -->";
+
+                const startIndex = content.indexOf(startMarker);
+                const endIndex = content.indexOf(endMarker);
+
+                if (startIndex === -1 || endIndex === -1 || startIndex >= endIndex) {
+                    outputDiv.textContent = "Required comment markers not found! Displaying unmodified code.";
+                    processedHTML = content;
+                } else {
+                    processedHTML = content.substring(startIndex, endIndex + endMarker.length);
+
+                    // ✅ Replace © Month Year with dynamic AMPscript
+                    processedHTML = processedHTML.replace(/©\s+[A-Za-z]+\s+\d{4}/g, '© %%=Format(Now(), "MMMM yyyy")=%%');
+
+                    outputDiv.textContent = processedHTML;
+                }
+
+                document.getElementById('copyBtn').style.display = "inline-block";
+                document.getElementById('downloadBtn').style.display = "inline-block";
+            };
+
+            reader.readAsText(file);
+        }
+
+        function copyToClipboard() {
+            if (!processedHTML) return;
+            const textArea = document.createElement("textarea");
+            textArea.value = processedHTML;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+        }
+
+        function downloadFile() {
+            if (!processedHTML) {
+                alert("No processed content to download.");
+                return;
+            }
+
+            const blob = new Blob([processedHTML], { type: "text/html" });
+            const a = document.createElement("a");
+            a.href = URL.createObjectURL(blob);
+            a.download = "revised.html";
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+    </script>
+
+</body>
+</html>
