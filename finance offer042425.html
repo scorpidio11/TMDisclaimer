@@ -62,42 +62,37 @@
       margin-top: 20px;
       height: 300px;
       resize: vertical;
-  
     }
-	   .radio-group{
-		font-size: 16px;
-		   line-height: 140%;
-		   font-weight: normal!important;
-			
-		}
+    .radio-group {
+      font-size: 16px;
+      line-height: 140%;
+      font-weight: normal!important;
+    }
   </style>
 </head>
 <body>
   <h1>Finance Offer Disclaimer</h1>
-	
-	<p>This generator is intended for initial drafting purposes only and can be used for financial offers, including rate buydowns. It does not replace compliance or legal review.</p>
+  <p>This generator is intended for initial drafting purposes only and can be used for financial offers, including rate buydowns. It does not replace compliance or legal review.</p>
   <form id="disclaimerForm">
     <label>Select Mortgage Type & Incentive Option:</label>
     <div class="radio-group">
       <input type="radio" id="fha_dollar" name="mortgageType" value="fha_dollar" checked>
       <label for="fha_dollar" style="display:inline;">FHA – Seller Paid Dollar Amount</label><br>
-      
       <input type="radio" id="fha_percentage" name="mortgageType" value="fha_percentage">
       <label for="fha_percentage" style="display:inline;">FHA – Seller Paid Percentage</label><br>
-      
       <input type="radio" id="conv_dollar" name="mortgageType" value="conv_dollar">
-      <label for="conv_dollar" style="display:inline;">Conventional – Seller Paid Dollar Amount</label>
-      <br>
-      
+      <label for="conv_dollar" style="display:inline;">Conventional – Seller Paid Dollar Amount</label><br>
       <input type="radio" id="conv_percentage" name="mortgageType" value="conv_percentage">
-      <label for="conv_percentage" style="display:inline;">Conventional – Seller Paid Percentage</label>
-      <br>
+      <label for="conv_percentage" style="display:inline;">Conventional – Seller Paid Percentage</label><br>
     </div>
 
-    <label>Fixed Interest Rate (APR will be auto - populated based on our current offer):</label><p style="font-size: 16px;">FHA 4.75 / 5.54% APR<br>
-FHA 3.875 / 4.652% APR<br>
-CONV: 4.99 / 5.07% APR<br>
-CONV 5.49 / 5.57% APR</p>
+    <label>Fixed Interest Rate (APR will be auto - populated based on our current offer):</label>
+    <p style="font-size: 16px;">
+      FHA 4.75 / 5.54% APR<br>
+      FHA 3.875 / 4.652% APR<br>
+      CONV: 4.99 / 5.07% APR<br>
+      CONV 5.49 / 5.57% APR
+    </p>
     <div class="fixed-rate-container">
       <input type="text" id="fixedRateInput" placeholder="" required />
       <input type="text" id="advertisedRateInput" placeholder="" required />
@@ -115,34 +110,35 @@ CONV 5.49 / 5.57% APR</p>
       <option value="bay">Bay Area</option>
       <option value="s-california">Southern California area</option>
       <option value="sacramento">Sacramento area</option>
-		 <option >---------------</option>
+      <option>---------------</option>
       <option value="portland">Portland area</option>
       <option value="seattle">Seattle area</option>
-		 <option >---------------</option>
+      <option>---------------</option>
       <option value="austin">Austin area</option>
       <option value="dallas">Dallas area</option>
       <option value="houston">Houston area</option>
-		 <option >---------------</option>
+      <option>---------------</option>
       <option value="jacksonville">Jacksonville area</option>
       <option value="naples">Fort Myers/Naples area</option>
       <option value="orlando">Orlando area</option>
       <option value="sarasota">Sarasota area</option>
       <option value="tampa">Tampa area</option>
       <option value="treasure">Treasure Coast area</option>
-		 <option >---------------</option>
+      <option>---------------</option>
       <option value="denver">Denver area</option>
       <option value="lasvegas">Las Vegas area</option>
       <option value="phoenix">Phoenix area</option>
-		 <option >---------------</option>
+      <option>---------------</option>
       <option value="atlanta">Atlanta area</option>
       <option value="charlotte">Charlotte area</option>
-<!--      <option value="charlotte_south">South Carolina area</option>-->
       <option value="raleigh">Raleigh area</option>
       <option value="indy">Indianapolis area</option>
     </select>
 
     <!-- New Specific Community field -->
-    <label for="community"><br>Specific Community <p style="font-size: 15px; font-weight: normal;">(optional – use only when the rate applies to a particular community)</p></label>
+    <label for="community"><br>Specific Community - Optional
+      <p style="font-size: 15px; font-weight: normal;">(optional – use only when the rate applies to a particular community)</p>
+    </label>
     <input type="text" id="community" placeholder="e.g. Parkside Estates Community" />
 
     <label for="closeDate"><br>Close-by Date:</label>
@@ -177,10 +173,11 @@ CONV 5.49 / 5.57% APR</p>
       }
     });
 
-    // 2. Date formatting helper
+    // 2. Date formatting helper — parse as local date to avoid UTC shift
     function formatDate(dateStr) {
       if (!dateStr) return '';
-      const date = new Date(dateStr);
+      const [year, month, day] = dateStr.split('-');
+      const date = new Date(year, month - 1, day);
       return date.toLocaleDateString('en-US', { year: '2-digit', month: 'numeric', day: 'numeric' });
     }
 
@@ -216,17 +213,20 @@ CONV 5.49 / 5.57% APR</p>
       phoenix: "Taylor Morrison Home Funding, Inc., NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location: AZ: #0917436 | www.nmlsconsumeraccess.org.",
       atlanta: "Taylor Morrison Home Funding, Inc. NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751. Licensed location: GA: #52654 | www.nmlsconsumeraccess.org.",
       charlotte: "Taylor Morrison Home Funding, Inc. NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751. Licensed locations: NC: #L-191654 | SC: #MLS-8588 | www.nmlsconsumeraccess.org.",
-      charlotte_south: "Taylor Morrison Home Funding, Inc., NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed locations: CO: Registration #8588, PH# 866-379-5390 | www.nmlsconsumeraccess.org.",
       raleigh: "Taylor Morrison Home Funding, Inc. NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751. Licensed location: NC: #L-191654 | www.nmlsconsumeraccess.org.",
       indy: "Taylor Morrison Home Funding, Inc., NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location: IN: #DFI-66890, PH# 866 - 379 - 5390 | www.nmlsconsumeraccess.org."
     };
 
     // 6. Templates for each mortgage/incentive combination
     const templates = {
-      'fha_dollar':    `*Limited Time Fixed Interest Rate {fixedRate} / {advertisedAPR} APR (“Promotion”) valid on new home contracts entered as of {promoPeriod} on all eligible {division} Quick Move-in Homes (each, an “Eligible Home”) that close on or before {closeDate} (“Promotion Period”). The advertised annual percentage rate (“APR”) of {advertisedAPR} APR is calculated using seller incentives and is based on an FHA 30-Year fixed rate mortgage with a Total Purchase Price of $375,000 and a loan amount of $368,207, 3.5% down payment and 640 median credit score. Available for owner-occupied only. Taylor Morrison has locked in, through Taylor Morrison Home Funding, Inc. (“Affiliated Lender”), a fixed interest rate for a pool of funds. Rate is only available for a limited time until pool of funds is either depleted or rate expires. At closing, Seller agrees to pay up to {sellerPaid} towards seller paid Temporary Buydown Fund, closing costs, pre-paids and/or discount points. Actual savings will vary by the community, floor plan, lot premium, options of home and availability. Other restrictions may apply. Seller reserves the right to modify the Promotion’s terms and/or Promotion Period at any time prior to contract.`,
-      'fha_percentage':`*Limited Time Fixed Interest Rate {fixedRate} / {advertisedAPR} APR (“Promotion”) valid on new home contracts entered as of {promoPeriod} on all eligible {division} Quick Move-in Homes (each, an “Eligible Home”) that close on or before {closeDate} (“Promotion Period”). The advertised annual percentage rate (“APR”) of {advertisedAPR} APR is calculated using seller incentives and is based on an FHA 30-Year fixed rate mortgage with a Total Purchase Price of $375,000 and a loan amount of $368,207, 3.5% down payment and 640 median credit score. Available for owner-occupied only. Taylor Morrison has locked in, through Taylor Morrison Home Funding, Inc. (“Affiliated Lender”), a fixed interest rate for a pool of funds. Rate is only available for a limited time until pool of funds is either depleted or rate expires. At closing, Seller agrees to pay up to {sellerPaid} of Total Purchase Price (as set forth on the Closing Disclosure) towards seller paid Temporary Buydown Fund, closing costs, pre-paids and/or discount points.`,
-      'conv_dollar':   `*Limited Time Fixed Interest Rate {rate} (“Promotion”) valid on new home contracts entered as of {promoPeriod} on select eligible {division} Quick Move-in Homes (each, an “Eligible Home”) that close on or before {closeDate} (“Promotion Period”). The advertised annual percentage rate (“APR”) of {advertisedAPR} APR is calculated using seller incentives and is based on a Conventional 30-Year fixed rate mortgage with a Total Purchase Price of $500,000 and a loan amount of $400,000, 20% down payment and 780 median credit score. Available for conventional conforming loan limits, owner-occupied only. Taylor Morrison has locked in, through Taylor Morrison Home Funding, Inc. (“Affiliated Lender”), a fixed interest rate for a pool of funds (minimum loan amount $225,000). Rate is only available for a limited time until pool of funds is either depleted or rate expires. At closing, Seller agrees to pay up to {sellerPaid} towards seller paid Temporary Buydown Fund, closing costs, pre-paids and/or discount points. Actual savings will vary by the community, floor plan, lot premium, options of home and availability. Other restrictions may apply. Seller reserves the right to modify the Promotion’s terms and/or Promotion Period at any time prior to contract.`,
-      'conv_percentage':`*Limited Time Fixed Interest Rate {rate} (“Promotion”) valid on new home contracts entered as of {promoPeriod} on select eligible {division} Quick Move-in Homes (each, an “Eligible Home”) that close on or before {closeDate} (“Promotion Period”). The advertised annual percentage rate (“APR”) of {advertisedAPR} APR is calculated using seller incentives and is based on a Conventional 30-Year fixed rate mortgage with a Total Purchase Price of $500,000 and a loan amount of $400,000, 20% down payment and 780 median credit score. Available for conventional conforming loan limits, owner-occupied only. Taylor Morrison has locked in, through Taylor Morrison Home Funding, Inc. (“Affiliated Lender”), a fixed interest rate for a pool of funds (minimum loan amount $225,000). Rate is only available for a limited time until pool of funds is either depleted or rate expires. At closing, Seller agrees to pay up to {sellerPaid} of Total Purchase Price (as set forth on the Closing Disclosure) towards seller paid Temporary Buydown Fund, discount points, up to one year HOA dues, closing costs and/or pre-paids.`
+      'fha_dollar':    `*Limited Time Fixed Interest Rate {fixedRate} / {advertisedAPR} APR (“Promotion”) valid on new home contracts entered as of {promoPeriod} on all eligible {division} Quick Move-in Homes (each, an “Eligible Home”) that close on or before {closeDate} (“Promotion Period”). The advertised annual percentage rate (“APR”) of {advertisedAPR} APR is calculated using seller incentives and is based on an FHA 30-Year fixed rate mortgage with a Total Purchase Price of $375,000 and a loan amount of $368,207, 3.5% down payment and 640 median credit score. Available for owner-occupied only. Taylor Morrison has locked in, through Taylor Morrison Home Funding, Inc.
+      (“Affiliated Lender”), a fixed interest rate for a pool of funds. Rate is only available for a limited time until pool of funds is either depleted or rate expires. At closing, Seller agrees to pay up to {sellerPaid} towards seller paid Temporary Buydown Fund, closing costs, pre-paids and/or discount points. Actual savings will vary by the community, floor plan, lot premium, options of home and availability. Other restrictions may apply. Seller reserves the right to modify the Promotion’s terms and/or Promotion Period at any time prior to contract.`,
+      'fha_percentage':`*Limited Time Fixed Interest Rate {fixedRate} / {advertisedAPR} APR (“Promotion”) valid on new home contracts entered as of {promoPeriod} on all eligible {division} Quick Move-in Homes (each, an “Eligible Home”) that close on or before {closeDate} (“Promotion Period”). The advertised annual percentage rate (“APR”) of {advertisedAPR} APR is calculated using seller incentives and is based on an FHA 30-Year fixed rate mortgage with a Total Purchase Price of $375,000 and a loan amount of $368,207, 3.5% down payment and 640 median credit score. Available for owner-occupied only. Taylor Morrison has locked in, through Taylor Morrison Home Funding, Inc.
+      (“Affiliated Lender”), a fixed interest rate for a pool of funds. Rate is only available for a limited time until pool of funds is either depleted or rate expires. At closing, Seller agrees to pay up to {sellerPaid} of Total Purchase Price (as set forth on the Closing Disclosure) towards seller paid Temporary Buydown Fund, closing costs, pre-paids and/or discount points.`,
+      'conv_dollar':   `*Limited Time Fixed Interest Rate {rate} (“Promotion”) valid on new home contracts entered as of {promoPeriod} on select eligible {division} Quick Move-in Homes (each, an “Eligible Home”) that close on or before {closeDate} (“Promotion Period”). The advertised annual percentage rate (“APR”) of {advertisedAPR} APR is calculated using seller incentives and is based on a Conventional 30-Year fixed rate mortgage with a Total Purchase Price of $500,000 and a loan amount of $400,000, 20% down payment and 780 median credit score. Available for conventional conforming loan limits, owner-occupied only. Taylor Morrison has locked in, through Taylor Morrison Home Funding, Inc.
+      (“Affiliated Lender”), a fixed interest rate for a pool of funds (minimum loan amount $225,000). Rate is only available for a limited time until pool of funds is either depleted or rate expires. At closing, Seller agrees to pay up to {sellerPaid} towards seller paid Temporary Buydown Fund, closing costs, pre-paids and/or discount points. Actual savings will vary by the community, floor plan, lot premium, options of home and availability. Other restrictions may apply. Seller reserves the right to modify the Promotion’s terms and/or Promotion Period at any time prior to contract.`,
+      'conv_percentage':`*Limited Time Fixed Interest Rate {rate} (“Promotion”) valid on new home contracts entered as of {promoPeriod} on select eligible {division} Quick Move-in Homes (each, an “Eligible Home”) that close on or before {closeDate} (“Promotion Period”). The advertised annual percentage rate (“APR”) of {advertisedAPR} APR is calculated using seller incentives and is based on a Conventional 30-Year fixed rate mortgage with a Total Purchase Price of $500,000 and a loan amount of $400,000, 20% down payment and 780 median credit score. Available for conventional conforming loan limits, owner-occupied only. Taylor Morrison has locked in, through Taylor Morrison Home Funding, Inc.
+      (“Affiliated Lender”), a fixed interest rate for a pool of funds (minimum loan amount $225,000). Rate is only available for a limited time until pool of funds is either depleted or rate expires. At closing, Seller agrees to pay up to {sellerPaid} of Total Purchase Price (as set forth on the Closing Disclosure) towards seller paid Temporary Buydown Fund, discount points, up to one year HOA dues, closing costs and/or pre-paids.`
     };
 
     // 7. Update sellerPaid label based on mortgageType
