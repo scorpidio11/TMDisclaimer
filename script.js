@@ -364,10 +364,10 @@ if (disclaimerOption === "yes") {
     sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable). "+ copyrightYear + "Taylor Morrison of Texas, Inc. and WLH Communities – Texas LLC, each the “Selling Entity” as applicable to client’s transaction.  All rights reserved.";
   } else if (location === "dallas") {
     sentence += "\n\n";
-    sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable). "+ copyrightYear + "Taylor Morrison of Texas, Inc. and Darling Homes of Texas, LLC, each the “Selling Entity” as applicable to client’s transaction. ";
+    sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable). "+ copyrightYear + "Taylor Morrison of Texas, Inc. ";
   } else if (location === "houston") {
     sentence += "\n\n";
-    sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable). "+ copyrightYear + "Taylor Morrison of Texas, Inc. and Darling Homes of Texas, LLC, each the “Selling Entity” as applicable to client’s transaction. All rights reserved.";
+    sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable). "+ copyrightYear + "Taylor Morrison of Texas, Inc. All rights reserved.";
   }
 		else if (location === "corp") {
     sentence += "\n\n";
