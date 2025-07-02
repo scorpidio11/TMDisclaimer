@@ -616,7 +616,7 @@ All information (including, but not limited to prices, views, availability, scho
 
       // Append eligibility text
       disclaimer += "\n\n" + commonEligibility;
-      const additionalText = additionalEligibilityMapping[divisionKey];
+      const additionalText = "\n" + additionalEligibilityMapping[divisionKey];
       if (additionalText) {
         disclaimer += " " + additionalText;
       }
