@@ -453,7 +453,7 @@ if (disclaimerOption === "yes" && location === "solivita" ) {
     sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable). " + copyrightYear + "Taylor Morrison of Texas, Inc. All rights reserved.";
   } else if (location === "cantamia") {
     sentence += "\n\n";
-    sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable). " + copyrightYear + "JCH Construction, LLC, ROC# 256789. © October 2023, AV Homes of Arizona, LLC, AZ DRE# LC632206000. All rights reserved.";
+    sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable). " + copyrightYear + "JCH Construction, LLC, ROC# 256789. AV Homes of Arizona, LLC, AZ DRE# LC632206000. All rights reserved.";
   }
 		else if (location === "corp") {
     sentence += "\n\n";
