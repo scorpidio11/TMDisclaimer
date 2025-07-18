@@ -465,7 +465,6 @@ const copyrightDate = `${monthName} ${year}`;
     const additionalEligibilityMapping = {
       "bay": `Taylor Morrison Home Funding, Inc., NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location: CA: DFPI #4130023 | www.nmlsconsumeraccess.org.
 
-
 All information (including, but not limited to prices, views, availability, school assignments and ratings, incentives, floor plans, site plans, features, standards and options, assessments and fees, planned amenities, programs, conceptual artists’ renderings, tax rates and community development plans) is not guaranteed and remains subject to change, or delay without notice. Any community improvements, recreational features and amenities described in marketing materials are based upon current development plans, which are subject to change and under no obligation to be completed.  Representative Photos in marketing for illustrative purposes only of available plans, features and structural option ideas; not necessarily the actual community or the actual homes that will be available. Images do not reflect a racial, ethnic, age or familial status preference.  Featured Available Home (Quick Move-In Home "QMI") excludes furniture, decorative accessories, as well as closing costs and will include any lot premium, Seller installed options and upgrades; Buyer-selected options will not be available on quick move-in homes. All homes subject to prior sale. Community Association or other fees may be required. All Homes subject to prior sale.  For Communities with an HOA/Public Report Only: No Purchase Agreement may be negotiated or signed by a prospective buyer for the purchase of a home until the Community’s applicable Conditional or Final Public Report has been issued by the Department of Real Estate (DRE). This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager or Online Sales Manager for additional state or community specific disclaimers, licensing information or other details (as applicable). Taylor Morrison Services, Inc., DRE #00968975; Taylor Morrison Services, Inc., CSLB License #519465 and William Lyon Homes, Inc., CSLB License #527293. © ${copyrightDate}, Taylor Morrison of California, LLC, William Lyon Homes, Inc. All rights reserved.  `,
 		
       "s-california": `Taylor Morrison Home Funding, Inc., NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location: CA: DFPI #4130023 | www.nmlsconsumeraccess.org.
@@ -508,7 +507,6 @@ All information (including, but not limited to prices, views, availability, scho
 
 All information (including, but not limited to prices, views, availability, school assignments and ratings, incentives, floor plans, exteriors, site plans, features, standards and options, assessments and fees, planned amenities, programs, conceptual artists’ renderings and community development plans) is not guaranteed and remains subject to change, availability or delay without notice. Any community improvements, recreational features and amenities described in marketing materials are based upon current development plans, which are subject to change and under no obligation to be completed. Representative Photos in marketing for illustrative purposes only of available plans, features and structural option ideas; not necessarily the actual community or the actual homes that will be available. Images do not reflect a racial, ethnic, age or familial status preference.  Community Association or other fees may be required. Featured Available Home (Quick Move-In Home "QMI") excludes furniture, decorative accessories, as well as closing costs and will include any lot premium, Seller installed options and upgrades; Buyer-selected options will not be available on quick move-in homes. All homes subject to prior sale. Community Association or other fees may be required. All Eligible Homes subject to prior sale. This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state or community specific disclaimers, licensing information or other details (as applicable). © ${copyrightDate}, Taylor Morrison of Florida, Inc. CBC1259457, CGC1529148. All rights reserved. `,
       "tampa": `Taylor Morrison Home Funding, Inc., NMLS #8588, 495 North Keller Road, Suite 550, Maitland, FL 32751, Licensed location FL: MLD1920 | www.nmlsconsumeraccess.org.
-
 
 All information (including, but not limited to prices, views, availability, school assignments and ratings, incentives, floor plans, exteriors, site plans, features, standards and options, assessments and fees, planned amenities, programs, conceptual artists’ renderings and community development plans) is not guaranteed and remains subject to change, availability or delay without notice. Any community improvements, recreational features and amenities described in marketing materials are based upon current development plans, which are subject to change and under no obligation to be completed.  Representative Photos in marketing for illustrative purposes only of available plans, features and structural option ideas; not necessarily the actual community or the actual homes that will be available. Images do not reflect a racial, ethnic, age or familial status preference. Featured Available Home (Quick Move-In Home "QMI") excludes furniture, decorative accessories, as well as closing costs and will include any lot premium, Seller installed options and upgrades; Buyer-selected options will not be available on quick move-in homes. All homes subject to prior sale. Community Association or other fees may be required. Community Association or other fees may be required. Offer void where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager or visit www.taylormorrison.com for additional state or community specific disclaimers, licensing information or other details (as applicable). © ${copyrightDate}, Taylor Morrison of Florida, Inc. CRC1328617 & CGC1537334
 Taylor Woodrow Communities at Artisan Lakes, L.L.C. CGC1519714. All rights reserved.  `,
@@ -637,11 +635,15 @@ All information (including, but not limited to prices, views, availability, scho
           .replace('{sellerPaid}', sellerPaid);
       }
 
-      // Append eligibility text
-      disclaimer += "\n\n" + commonEligibility;
-      const additionalText = "\n" + additionalEligibilityMapping[divisionKey];
+      // Append eligibility text, with FHA-specific sentence when applicable
+      let eligibilityText = commonEligibility;
+      if (selectedType.startsWith('fha')) {
+        eligibilityText += " Taylor Morrison Home Funding, Inc. is not acting on behalf of or at the direction of HUD/FHA or the federal government. Not all Borrowers will qualify. Services not available in all states.";
+      }
+      disclaimer += "\n\n" + eligibilityText;
+      const additionalText = additionalEligibilityMapping[divisionKey];
       if (additionalText) {
-        disclaimer += " " + additionalText;
+        disclaimer += "\n" + additionalText;
       }
 
       document.getElementById('disclaimerOutput').value = disclaimer;
@@ -658,4 +660,3 @@ All information (including, but not limited to prices, views, availability, scho
 		
 	</body>
 </html>
-
