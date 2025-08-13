@@ -130,7 +130,7 @@ if (disclaimerOption === "yes" && location === "solivita" ) {
 	
 	if (disclaimerOption === "yes" && location === "tradition" ) {
     sentence += "\n\n";
-    sentence += "*At least one resident of household must be 55 or older, and no person nineteen (19) years of age or under shall reside in any Home for more than 30 days in any one calendar year. Only an owner and his or her Immediate Family Members who are nineteen (19) years of age or older may permanently reside in a residence. All information (including, but not limited to prices, views, availability, school assignments and ratings, incentives, floor plans, site plans, features, standards and options, assessments, and fees, planned amenities, programs, conceptual artists' renderings, tax rates and community development plans) is not guaranteed and remains subject to change, or delay without notice.  ";
+    sentence += "*At least one resident of household must be 55 or older, and no person under the age of nineteen (19) years of age shall reside in any Home for more than 30 days in any one calendar year. Only an owner and his or her Immediate Family Members who are nineteen (19) years of age or older may permanently reside in a residence. All information (including, but not limited to prices, views, availability, school assignments and ratings, incentives, floor plans, site plans, features, standards and options, assessments, and fees, planned amenities, programs, conceptual artists' renderings, tax rates and community development plans) is not guaranteed and remains subject to change, or delay without notice.  ";
   }
 	
 	
