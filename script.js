@@ -121,7 +121,7 @@ if (calAD === "no") {
 
 if (disclaimerOption === "yes") {
     sentence += "\n\n";
-    sentence += "All information (including, but not limited to prices, views, availability, school assignments and ratings, incentives, floor plans, site plans, features, standards and options, assessments, and fees, planned amenities, programs, conceptual artists' renderings, tax rates and community development plans) is not guaranteed and remains subject to change, or delay without notice.";
+    sentence += "All information (including, but not limited to prices, views, availability, school assignments and ratings, incentives, floor plans, elevations, site plans, features, standards and options, assessments and fees, planned amenities, programs, conceptual artists' renderings and community development plans) is not guaranteed and remains subject to change, availability or delay without notice. Any community improvements, recreational features and amenities described are based upon current development plans, which are subject to change and under no obligation to be completed. Maps and plans are not to scale, are not intended to show specific detailing and all dimensions are approximate.  All Homes in this Taylor Morrison Offer Process Release subject to prior sale.   Offer void where prohibited or otherwise restricted by law.";
   }
   if (StockPhotosOption === "yes") {
     sentence += "\n\n";
@@ -333,7 +333,7 @@ if (disclaimerOption === "yes") {
 
   } else if (location === "denver") {
     sentence += "\n\n";
-    sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. No offer to sell or lease any property until submittal of the Public Offering Statement for the above-described Property to the Nevada Real Estate Division. Offer void where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable). "+ copyrightYear + "Taylor Morrison of Colorado, Inc. and William Lyon Homes, Inc., each the “Selling Entity” as applicable to client’s transaction. All rights reserved.";
+    sentence += "This is not an offering in any state where prohibited or otherwise restricted by law. Please see a Taylor Morrison Community Sales Manager for details and visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable). "+ copyrightYear + "Taylor Morrison of Colorado, Inc. and William Lyon Homes, Inc., each the “Selling Entity” as applicable to client’s transaction. All rights reserved.";
   } else if (location === "lasvegas") {
     sentence += "\n\n";
     sentence += "No offer to sell or lease any property until submittal of the Public Offering Statement for the above-described Property to the Nevada Real Estate Division. Complete details available. This is not an offering in any state where prohibited or otherwise restricted by law. Please visit www.taylormorrison.com for additional state and community specific disclaimers, licensing information and other details (as applicable) and information about active Las Vegas-area communities." + copyrightYear + "Robert Evon, Sales Manager #BS.0029612.SMGR; William Lyon Homes, Inc. dba Taylor Morrison, NSCL #0040722. Taylor Morrison of Nevada, LLC; William Renteria, Broker, Lic. # B.0146240.LLC. All rights reserved.";
