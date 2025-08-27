@@ -121,7 +121,7 @@ if (calAD === "no") {
 
 if (disclaimerOption === "yes") {
     sentence += "\n\n";
-    sentence += "All information (including, but not limited to prices, views, availability, school assignments and ratings, incentives, floor plans, elevations, site plans, features, standards and options, assessments and fees, planned amenities, programs, conceptual artists' renderings and community development plans) is not guaranteed and remains subject to change, availability or delay without notice. Any community improvements, recreational features and amenities described are based upon current development plans, which are subject to change and under no obligation to be completed. Maps and plans are not to scale, are not intended to show specific detailing and all dimensions are approximate.  All Homes in this Taylor Morrison Offer Process Release subject to prior sale.   Offer void where prohibited or otherwise restricted by law.";
+    sentence += "All information (including, but not limited to prices, views, availability, school assignments and ratings, incentives, floor plans, elevations, site plans, features, standards and options, assessments and fees, planned amenities, programs, conceptual artists' renderings and community development plans) is not guaranteed and remains subject to change, availability or delay without notice. Any community improvements, recreational features and amenities described are based upon current development plans, which are subject to change and under no obligation to be completed. Maps and plans are not to scale, are not intended to show specific detailing and all dimensions are approximate.";
   }
   if (StockPhotosOption === "yes") {
     sentence += "\n\n";
